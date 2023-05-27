@@ -1,0 +1,80 @@
+/* Navbar */
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#1c1c1c, #333);
+    color: #FBFBFB;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+  
+.nav-content {
+  width: 968px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* Nav Content Left */
+.nav-content-left #menu-toggle {
+  display: none;
+}
+
+.nav-content-left .logo {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: #FBFBFB;
+  cursor: pointer;
+}
+
+.nav-content-left .logo img {
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+
+/* Nav Content Right */
+.nav-content-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-content-right .menu .menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.nav-content-right .menu .menu-list a, .nav-content-right .social-icons a {
+  color: #FBFBFB;
+  padding: 0.6rem;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  margin-right: 0.6rem;
+}
+
+.nav-content-right .menu .menu-list a:hover {
+  background-color: #444;
+}
+
+.nav-content-right .social-icons a {
+  font-size: 1.5rem;
+}
+
+.nav-content-right .social-icons a:hover {
+  color: #ded1c1;
+}
+.nav-content-right .social-icons #linkedin:hover {
+  color: #00acee;
+}
+.nav-content-right .social-icons #instagram:hover {
+  color: #fb3958;
+}
