@@ -19,29 +19,39 @@
                 <div class="nav-content-left">
                     <a href="#sobre" class="logo">
                         <img src="assets/logo.svg" alt="Logo">
-                        <h1>Felipe <span>Antoniati</span></h1>
+                        <h1>Felipe Antoniati</h1>
                     </a>
-                    <button id="menu-toggle"><i class="fas fa-bars"></i></button>
+                    <div class="menu-toggle" onclick="MenuToggle.open()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
                 <div class="nav-content-right">
                     <div class="menu">
                         <ul class="menu-list">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#servicos">Serviços</a></li>
-                            <li><a href="#portfolio">Portfólio</a></li>
-                            <li><a href="#sobre">Sobre</a></li>
-                            <li><a href="#contato">Contato</a></li>
+                            <li><a onclick="MenuToggle.open()" href="#sobre">Sobre</a></li>
+                            <li><a onclick="MenuToggle.open()" href="#servicos">Serviços</a></li>
+                            <li><a onclick="MenuToggle.open()" href="#portfolio">Portfólio</a></li>
+                            <li><a onclick="MenuToggle.open()" href="#contato">Contato</a></li>
                         </ul>
                     </div>
                     <div class="social-icons">
-                        <a id="linkedin" href="#"><i class="fab fa-linkedin"></i></a>
-                        <a id="facebook "href="#"><i class="fab fa-github"></i></a>
-                        <a id="instagram" href="#"><i class="fab fa-instagram"></i></a>
+                        <a id="linkedin" href="https://www.linkedin.com/in/felipe-antoniati-30983b231/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a id="facebook " href="https://github.com/antoniati" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a id="instagram" href="https://www.instagram.com/antoniatifelipe/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
+    <script src="script.js"></script>
 </body>
 
 </html>
