@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programador Freelance - Felipe Antoniati</title>
+    <meta name="description" content="Sou Felipe Antoniati, um experiente desenvolvedor web freelance especializado em criar websites e aplicativos personalizados. Trabalho com clientes de diversos setores para fornecer soluções digitais de alta qualidade. Entre em contato e vamos transformar sua visão em realidade.">
+    <title>Desenvolvedor Web Freelance | Felipe Antoniati - Websites e Aplicativos Personalizados</title>
     <link rel="stylesheet" type="text/css" href="styles/global.css">
     <link rel="stylesheet" type="text/css" href="styles/home/navbar.css">
+    <link rel="stylesheet" type="text/css" href="styles/home/presentation.css">
 
     <script src="https://kit.fontawesome.com/7a585beab0.js" crossorigin="anonymous"></script>
 </head>
@@ -15,18 +17,17 @@
 <body>
     <header>
         <nav id="navbar">
-            <div class="nav-content">
+            <div class="nav-content container">
                 <div class="nav-content-left">
-                    <a href="#sobre" class="logo">
                         <img src="assets/logo.svg" alt="Logo">
                         <h1>Felipe Antoniati</h1>
-                    </a>
                     <div class="menu-toggle" onclick="MenuToggle.open()">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
                 </div>
+
                 <div class="nav-content-right">
                     <div class="menu">
                         <ul class="menu-list">
@@ -51,6 +52,22 @@
             </div>
         </nav>
     </header>
+    <main>
+        <section class="presentation">
+            <div class="presentation-content">
+                <div class="texts-presentation">
+                    <h1>Desenvolvedor Web - Felipe Antoniati</h1>
+                    <p>Especializado em criar websites e aplicativos personalizados que transformam suas visões em realidade. Impulsionando negócios online com soluções criativas e eficientes</p>
+                </div>
+                <div class="buttons-presentation">
+                    <div class="buttons-presentation">
+                        <a href="#about" class="btn">Saiba Mais</a>
+                        <button id="openModal">Contate-me</button>
+                      </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 

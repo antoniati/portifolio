@@ -1,0 +1,66 @@
+.presentation {
+    background-image: url('caminho/para/imagem-de-fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    text-align: center;
+    padding: 7rem 1rem 3rem 1rem;
+}
+
+.presentation .presentation-content {
+    max-width: 968px;
+}
+
+.presentation .presentation-content .texts-presentation h1 {
+    font-size: 2.6rem;
+    margin-bottom: 1.6rem;
+}
+
+.presentation .presentation-content .texts-presentation p {
+    font-size: 1.5rem;
+    margin-bottom: 1.6rem;
+}
+  
+.presentation .presentation-content .buttons-presentation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.presentation .presentation-content .buttons-presentation .btn, #openModal {
+  display: inline-block;
+  padding: 1rem;
+  margin-right: 1rem;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 0.3rem;
+}
+
+.presentation .presentation-content .buttons-presentation .btn {
+    margin-right: 1rem;
+    background-co
+}
+
+@media only screen and (max-width: 768px) {
+  .presentation .presentation-content .texts-presentation h1 {
+    font-size: 2.2rem;
+  }
+  
+  .presentation .presentation-content .texts-presentation p {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .presentation .presentation-content .buttons-presentation {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .presentation .presentation-content .buttons-presentation #openModal {
+        margin-top: 1rem;
+    }
+}
+     

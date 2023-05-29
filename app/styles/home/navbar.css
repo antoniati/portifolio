@@ -12,7 +12,7 @@
     z-index: 999;
   }
   
-.nav-content {
+#navbar .nav-content {
   width: 968px;
   display: flex;
   align-items: center;
@@ -21,35 +21,39 @@
 
 
 /* Nav Content Left */
-.nav-content-left .logo {
+#navbar .nav-content .nav-content-left {
   display: flex;
   align-items: center;
   padding: 1rem;
   color: #FBFBFB;
-  cursor: pointer;
 }
 
-.nav-content-left .logo img {
-  width: 2rem;
+#navbar .nav-content .nav-content-left h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#navbar .nav-content .nav-content-left img {
+  width: 3rem;
   margin-right: 1rem;
 }
 
 
 /* Nav Content Right */
-.nav-content-right {
+#navbar .nav-content .nav-content-right {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.nav-content-right .menu .menu-list {
+#navbar .nav-content .nav-content-right .menu .menu-list {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem;
 }
 
-.nav-content-right .menu .menu-list a, .nav-content-right .social-icons a {
+#navbar .nav-content .nav-content-right .menu .menu-list a, .nav-content-right .social-icons a {
   color: #FBFBFB;
   padding: 0.6rem;
   border-radius: 0.3rem;
@@ -57,32 +61,33 @@
   margin-right: 0.6rem;
 }
 
-.nav-content-right .menu .menu-list a:hover {
+#navbar .nav-content .nav-content-right .menu .menu-list a:hover {
   background-color: #444;
 }
 
-.nav-content-right .social-icons a {
+#navbar .nav-content .nav-content-right .social-icons a {
   font-size: 1.5rem;
 }
 
-.nav-content-right .social-icons a:hover {
+#navbar .nav-content .nav-content-right .social-icons a:hover {
   color: #ded1c1;
 }
-.nav-content-right .social-icons #linkedin:hover {
+
+#navbar .nav-content .nav-content-right .social-icons #linkedin:hover {
   color: #00acee;
 }
-.nav-content-right .social-icons #instagram:hover {
+
+#navbar .nav-content.nav-content-right .social-icons #instagram:hover {
   color: #fb3958;
 }
 
 /* Responsividade & Menu Toggle */
-
 @media(max-width: 875px) {
-  .nav-content-right {
+  #navbar .nav-content .nav-content-right {
     display: none;
   } 
 
-  .nav-content-left {
+  #navbar .nav-content .nav-content-left {
     width: 100%;
     display: flex;
     align-items: center;
@@ -90,67 +95,80 @@
   }
 
 
-  .menu-toggle {
+  #navbar .nav-content .nav-content-left .menu-toggle {
     display: inline-block;
     cursor: pointer;
     margin-right: 2rem;   
   }
   
-  .menu-toggle span {
+  #navbar .nav-content .nav-content-left .menu-toggle span {
     display: block;
-    width: 30px;
-    height: 4px;
+    width: 2rem;
+    height: 0.2rem;
     margin-bottom: 5px;
     background-color: #FBFBFB;
     transition: transform 0.3s, background-color 0.3s;
   }
   
-  .menu-toggle:hover span:nth-child(2) {
+  #navbar .nav-content .nav-content-left .menu-toggle:hover span:nth-child(2) {
     background-color: #00acee;
   }
   
-  .menu-toggle.open span:nth-child(1) {
+  #navbar .nav-content .nav-content-left .menu-toggle.open span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
   }
   
-  .menu-toggle.open span:nth-child(2) {
+  #navbar .nav-content .nav-content-left .menu-toggle.open span:nth-child(2) {
     opacity: 0;
   }
   
-  .menu-toggle.open span:nth-child(3) {
+  #navbar .nav-content .nav-content-left .menu-toggle.open span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -8px);
   }
 
   
-  .nav-content.open {
+  #navbar .nav-content.open {
     flex-direction: column;
   }
 
-  .nav-content-right.open {
+  #navbar .nav-content .nav-content-right.open {
     display: block;
     width: 100%;
   }
 
-  .nav-content-right.open .menu-list {
+  #navbar .nav-content .nav-content-right.open .menu-list {
     display: block;
   }
 
-  .nav-content-right.open .menu .menu-list li {
+  #navbar .nav-content .nav-content-right.open .menu .menu-list li {
     width: 100%;
     margin-top: 2rem;
   }
-  .nav-content-right.open .menu .menu-list a {
+  
+  #navbar .nav-content .nav-content-right.open .menu .menu-list a {
     font-size: 2rem;
     margin-left: 2rem;
   }
-  .nav-content-right.open .social-icons {
+
+  #navbar .nav-content .nav-content-right.open .social-icons {
     text-align: center;
     padding: 2rem;
-    border-top: 1px solid #444;
+    border-top: 0.1rem solid #444;
     margin-top: 2rem;
   }
 
-  .nav-content-right.open .social-icons a {
+  #navbar .nav-content .nav-content-right.open .social-icons a {
     font-size: 2.3rem;
+  }
+
+  #navbar .nav-content .nav-content-left img {
+    margin-left: 1.6rem;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #navbar .nav-content .nav-content-left h1 {
+    display: none;
   }
 }
