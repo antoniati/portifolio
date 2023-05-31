@@ -3,32 +3,52 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--main-color);
   }
   
-  .services h1 {
-    margin-bottom: 2rem;
+  .services-title {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    color: var(--white-color);
   }
   
   .services-cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1.5rem;
+    margin-top: 1.6rem;
+    paddin-bottom: 2rem;
   }
   
   .service-card {
     width: 300px;
     padding: 1rem;
-    background: #d9d9d9;
     margin: 1rem;
     text-align: center;
     border: 1px solid #c3c3c3;
     border-radius: 0.3rem;
+    background-color: var(--white-color);
   }
   
   .service-title {
     margin-bottom: 1rem;
     font-size: 1.5rem;
+  }
+
+  .button-services {
+    display: inline-block;
+    padding: 1rem;
+    margin: 1.5rem;
+    background-color: var(--dark-color);
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 0.3rem;
+  }
+
+  .button-services:hover {
+    background-color: #222;
   }
   
   /* Responsividade */

@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Sou Felipe Antoniati, um experiente desenvolvedor web freelance especializado em criar websites e aplicativos personalizados. Trabalho com clientes de diversos setores para fornecer soluções digitais de alta qualidade. Entre em contato e vamos transformar sua visão em realidade.">
-    <title>Desenvolvedor Web Freelance | Felipe Antoniati - Websites e Aplicativos Personalizados</title>
+        content="Sou Felipe Antoniati, um experiente programdor freelance especializado em criar websites e aplicativos personalizados. Trabalho com clientes de diversos setores para fornecer soluções digitais de alta qualidade. Entre em contato e vamos transformar sua visão em realidade.">
+    <title>Programador Freelance | Felipe Antoniati - Websites e Aplicativos Personalizados</title>
     <link rel="stylesheet" type="text/css" href="styles/global.css">
     <link rel="stylesheet" type="text/css" href="styles/home/navbar.css">
     <link rel="stylesheet" type="text/css" href="styles/home/presentation.css">
@@ -21,8 +21,8 @@
         <nav id="navbar">
             <div class="nav-content container">
                 <div class="nav-content-left">
-                    <img src="assets/logo.svg" alt="Logo">
-                    <h1>Felipe Antoniati</h1>
+                    <img src="assets/logo.svg" alt="Logo" class="logo-img">
+                    <h1 class="logo-title">Felipe Antoniati</h1>
                     <div class="menu-toggle" onclick="MenuToggle.open()">
                         <span></span>
                         <span></span>
@@ -33,20 +33,20 @@
                 <div class="nav-content-right">
                     <div class="menu">
                         <ul class="menu-list">
-                            <li><a onclick="MenuToggle.open()" href="#sobre">Sobre</a></li>
-                            <li><a onclick="MenuToggle.open()" href="#servicos">Serviços</a></li>
-                            <li><a onclick="MenuToggle.open()" href="#portfolio">Portfólio</a></li>
-                            <li><a onclick="MenuToggle.open()" href="#contato">Contato</a></li>
+                            <li class="menu-item"><a class="menu-link" onclick="MenuToggle.open()" href="#sobre">Sobre</a></li>
+                            <li class="menu-item"><a class="menu-link" onclick="MenuToggle.open()" href="#servicos">Serviços</a></li>
+                            <li class="menu-item"><a class="menu-link" onclick="MenuToggle.open()" href="#portfolio">Portfólio</a></li>
+                            <li class="menu-item"><a class="menu-link" onclick="MenuToggle.open()" href="#contato">Contato</a></li>
                         </ul>
                     </div>
                     <div class="social-icons">
-                        <a id="linkedin" href="https://www.linkedin.com/in/felipe-antoniati-30983b231/" target="_blank">
+                        <a class="social-link" id="linkedin" href="https://www.linkedin.com/in/felipe-antoniati-30983b231/" target="_blank">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a id="facebook " href="https://github.com/antoniati" target="_blank">
+                        <a class="social-link" id="github " href="https://github.com/antoniati" target="_blank">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a id="instagram" href="https://www.instagram.com/antoniatifelipe/" target="_blank">
+                        <a class="social-link" id="instagram" href="https://www.instagram.com/antoniatifelipe/" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
@@ -58,20 +58,20 @@
         <section class="presentation">
             <div class="presentation-content">
                 <div class="texts-presentation">
-                    <h1>Programador freelancer - Felipe Antoniati</h1>
-                    <p>Especializado em criar websites e aplicativos personalizados que transformam suas visões em realidade. Impulsionando negócios online com soluções criativas e eficientes
+                    <h1 class="presentation-title">Programador freelancer - Felipe Antoniati</h1>
+                    <p class="presentation-description">Especializado em criar websites e aplicativos personalizados que transformam suas visões em realidade. Impulsionando negócios online com soluções criativas e eficientes
                     </p>
                 </div>
                 <div class="buttons-presentation">
                     <div class="buttons-presentation">
-                        <a href="#about" class="btn">Saiba Mais</a>
-                        <button id="openModal">Contate-me</button>
+                        <a href="#about" class="button-about">Saiba Mais</a>
+                        <button class="button-modal">Entre em contato</button>
                     </div>
                 </div>
             </div>
         </section>
         <section class="services">
-            <h1>Serviços oferecidos</h1>
+            <h1 class="services-title">Conheça meus serviços</h1>
             <div class="services-cards">
                 <div class="service-card">
                     <h2 class="service-title">Desenvolvimento de Aplicativos</h2>
@@ -104,7 +104,7 @@
                         Funcionando de Forma Eficiente</p>
                 </div>
             </div>
-
+            <a href="#about" class="button-services">Saiba Mais</a>
         </section>
     </main>
     <script src="script.js"></script>
