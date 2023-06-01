@@ -1,9 +1,10 @@
 :root {
   /*colors*/
-  --main-color: #3B50A3;
-  --second-color: #4E69D2;
-  --white-color: #FBFBFB;
-  --dark-color: #1c1c1c;
+  --main-color: #222945;
+  --dark-green: #15B097;
+  --light-green: #71F79F;
+  --white-ghost: #EEEEFF;
+  --black-panther: #1c1c1c;
 
   /*radius*/
   --main-radius: 0.3rem;
@@ -22,6 +23,7 @@ html {
   
   body {
     font-family: Arial, sans-serif;
+    background-color: var(--main-color);
   }
   
   li {

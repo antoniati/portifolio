@@ -9,7 +9,10 @@
   .services-title {
     font-size: 1.8rem;
     margin-top: 1.5rem;
-    color: var(--white-color);
+    padding-bottom: 1.5rem;
+    font-weight: bold;
+    color: var(--light-green);
+    border-bottom: 1px solid var(--white-ghost);
   }
   
   .services-cards {
@@ -26,29 +29,13 @@
     padding: 1rem;
     margin: 1rem;
     text-align: center;
-    border: 1px solid #c3c3c3;
     border-radius: 0.3rem;
-    background-color: var(--white-color);
+    background-color: var(--white-ghost);
   }
   
   .service-title {
     margin-bottom: 1rem;
     font-size: 1.5rem;
-  }
-
-  .button-services {
-    display: inline-block;
-    padding: 1rem;
-    margin: 1.5rem;
-    background-color: var(--dark-color);
-    color: #fff;
-    font-size: 1rem;
-    text-decoration: none;
-    border-radius: 0.3rem;
-  }
-
-  .button-services:hover {
-    background-color: #222;
   }
   
   /* Responsividade */
@@ -65,7 +52,11 @@
     }
     
     .service-card {
-      width: 400px;
+      width: 310px;
+    }
+
+    .button-about {
+      margin-bottom: 1rem;
     }
   }
   

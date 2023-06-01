@@ -5,22 +5,22 @@
   align-items: center;
   text-align: center;
 }
-
 .presentation-content {
   max-width: 968px;
-  padding: 10rem 1rem 3rem 1rem;
-
+  padding: 9rem 1rem 3rem 1rem;
 }
 
 .presentation-title {
     font-size: 2.6rem;
     margin-bottom: 1.6rem;
+    color: var(--light-green);
 }
 
 .presentation-description {
     font-size: 1.5rem;
     line-height: 2rem;
     margin-bottom: 1.6rem;
+    color: var(--white-ghost);
 }
   
 .buttons-presentation {
@@ -29,23 +29,22 @@
   flex-wrap: wrap;
 }
 
-.button-about, .button-modal {
+.button-about {
   display: inline-block;
-  padding: 1rem;
+  padding: 0.6rem 1.5rem 0.6rem 1.5rem;
   margin-right: 1rem;
-  background-color: var(--main-color);
-  color: #fff;
+  background-color: trasnparent;
+  font-weight: bold;
+  border: 0.2rem solid var(--light-green);
+  color: var(--light-green);
   font-size: 1rem;
   text-decoration: none;
-  border-radius: 0.3rem;
+  border-radius: 50rem;
 }
 
-.button-about:hover, .button-modal:hover {
-  background-color: var(--second-color);
-}
-
-.button-about {
-    margin-right: 1rem;
+.button-about:hover {
+  background-color: var(--light-green);
+  color: var(--black-panther);
 }
 
 @media only screen and (max-width: 768px) {

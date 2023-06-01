@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(#1c1c1c, #333);
+    background: #222945;
     position: fixed;
     top: 0;
     left: 0;
@@ -29,7 +29,7 @@
 .logo-title {
   font-size: 1.3rem;
   text-align: center;
-  color: var(--white-color);
+  color: var(--white-ghost);
 }
 
 .logo-img {
@@ -53,17 +53,17 @@
 }
 
 .menu-link, .social-link {
+  position: relative;
   font-size: 1rem;
   font-weight: bold;
-  color: var(--white-color);
+  color: var(--white-ghost);
   padding: 0.6rem;
   margin-right: 0.6rem;
-  border-radius: 0.3rem;
-  transition: background-color 0.3s ease-out, color 0.3s;
 }
 
 .menu-link:hover {
-  background-color: var(--main-color);
+  border-bottom: 2px solid var(--light-green);
+  color: var(--light-green);
 }
 
 .social-link {
@@ -108,12 +108,12 @@
     width: 2rem;
     height: 0.2rem;
     margin-bottom: 5px;
-    background-color: #FBFBFB;
+    background-color: var(--white-ghost);
     transition: transform 0.3s, background-color 0.3s;
   }
   
   .menu-toggle:hover span:nth-child(2) {
-    background-color: #00acee;
+    background-color: var(--light-green);
   }
   
   .menu-toggle.open span:nth-child(1) {
@@ -142,10 +142,10 @@
 
   .nav-content-right.open .menu-list {
     display: block;
+    width: 100%;
     margin-right: 10rem;
     margin-bottom: 3rem;
-    border-bottom: 1px solid #555;
-    width: 100%;
+    border-bottom: 1px solid var(--white-ghost);
   }
 
   .nav-content-right.open .menu-item {
