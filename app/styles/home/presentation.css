@@ -1,24 +1,35 @@
 .presentation {
+  width: 100%;
+  max-width: 1200px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 9rem;
 }
+
 .presentation-content {
+  width: 100%;
   max-width: 968px;
+}
+
+.presentation-perfil-image {
+  width: 250px;
+  width: 250px;
+  border-radius: 50rem;
+  margin-bottom: 1.6rem;
 }
 
 .presentation-title {
   font-size: 2.6rem;
   margin-bottom: 1.6rem;
-  color: var(--light-green);
+  color: var(--dark-green);
 }
 
 .presentation-description {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
   margin-bottom: 1.6rem;
   color: var(--white-ghost);
 }
@@ -30,24 +41,23 @@
 }
 
 .button-about {
-  display: inline-block;
   padding: 0.6rem 1.5rem 0.6rem 1.5rem;
   margin-right: 1rem;
   background-color: trasnparent;
   font-weight: bold;
-  border: 0.2rem solid var(--light-green);
-  color: var(--light-green);
-  font-size: 1rem;
+  border: 0.2rem solid var(--dark-green);
+  color: var(--dark-green);
+  font-size: 1.3rem;
   text-decoration: none;
   border-radius: 50rem;
 }
 
 .button-about:hover {
-  background-color: var(--light-green);
+  background-color: var(--dark-green);
   color: var(--black-panther);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
   .presentation-title {
     font-size: 2.2rem;
   }
@@ -57,14 +67,32 @@
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 625px) {
   .buttons-presentation {
-    width: 100%;
     flex-direction: column;
   }
 
-  .button-modal {
-    margin-top: 1rem;
+  .presentation-perfil-image {
+    margin-top: 6rem;
+  }
+
+  .presentation-content {
+    padding: 2rem;
+  }
+
+  .button-about {
+    margin-bottom: 1.6rem;
   }
 }
-     
+
+@media only screen and (max-width: 390px) {
+  .presentation-perfil-image {
+    margin-top: 8rem;
+  }
+}
+
+@media only screen and (max-width: 358px) {
+  .presentation-perfil-image {
+    margin-top: 16rem;
+  }
+}

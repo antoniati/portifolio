@@ -13,8 +13,11 @@ var MenuToggle = {
   };
 
 
-  // Swiper - SLIDE SHOW CARDS PORTIFOLIO
+  // Swiper - SLIDE SHOW CARDS SERVICES
   const swiper = new Swiper('.swiper', {
+    autoplay: {
+      delay: 7000,
+    },
     // pagination
     pagination: {
       el: '.swiper-pagination',

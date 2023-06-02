@@ -1,59 +1,181 @@
 .services {
     width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-top: 5rem;
-  }
-  
-  .services-title {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: var(--light-green);
-  }
-  
-  .services-cards {
-    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-top: 1.6rem;
-    paddin-bottom: 2rem;
-  }
-  
-  .service-card {
-    width: 300px;
-    padding: 1rem;
-    margin: 1rem;
+    flex-direction: column;
+}
+
+.services-title {
+    font-size: 1.8rem;
+    color: var(--dark-green);
+    margin-bottom: 2rem;
+}
+
+.swiper {
+    width: 968px;
+    height: 350px;
+}
+
+.swiper-wrapper {
+    width: 100% !important;
+}
+
+.swiper-slide {
+    max-width: 968px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.6rem;
+}
+
+.service-card {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-cotent: center;
+    padding: 2rem;
+    border: 1px solid var(--dark-green);
+    border-radius: 1rem;
+    color: var(--white-ghost);
+}
+
+.service-card i {
+    color: var(--dark-green);
     text-align: center;
-    border-radius: 0.3rem;
-    background-color: var(--white-ghost);
-  }
-  
-  .service-title {
-    margin-bottom: 1rem;
+    width: 100%;
+    font-size: 5rem;
+}
+
+.service-info {
+    padding: 1rem;
+}
+
+.service-title {
+    color: var(--dark-green);
     font-size: 1.5rem;
-  }
-  
-  /* Responsividade */
+    margin-bottom: 1rem;
+}
 
-  @media (max-width: 1024px) {
-    .services-cards {
-        gap: 1px;
-      }
-  }
+.service-description{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 2.3rem;
+}
 
-  @media (max-width: 500px) {
-    .services-cards {
-      justify-content: space-around;
+.button-website {
+    display: inline-block;
+    padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+    position: absolute;
+    bottom: 25px;
+    right: 110px;
+    background-color: trasnparent;
+    font-weight: bold;
+    border: 0.2rem solid var(--dark-green);
+    color: var(--dark-green);
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 50rem;
+}
+
+.button-website:hover {
+    background-color: var(--dark-green);
+    color: var(--black-panther);
+}
+
+
+.swiper-button-prev, .swiper-button-next {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    --swiper-navigation-size: 25px;
+    --swiper-navigation-color: var(--white-ghost);
+    background: var(--dark-green);
+}
+
+
+.swiper-pagination {
+    --swiper-pagination-color: var(--dark-green);
+}
+
+@media(max-width: 967px) {
+    .service-title {
+        margin-top: 1.6rem;
     }
-    
     .service-card {
-      width: 310px;
+        flex-direction: column;
     }
 
-    .button-about {
-      margin-bottom: 1rem;
+    .swiper {
+        width: 800px;
+        height: 500px;
     }
-  }
-  
+
+    .button-website {
+        right: 145px;
+        bottom: 50px;
+    }
+
+}
+
+@media(max-width: 800px) {
+    .swiper {
+        width: 600px;
+        height: 550px;
+    }
+
+    .button-website {
+        right: 235px;
+        bottom: 50px;
+    }
+}
+
+@media(max-width: 599px) {
+    .swiper {
+        width: 420px;
+        height: 650px;
+    }
+
+    .services-title {
+        margin-top: 6rem;
+    }
+
+    .service-description {
+        font-size: 1rem;
+    }
+
+    .button-website {
+        right: 145px;
+        bottom: 50px;
+    }
+
+    .service-card i {
+        background: var(--dark-green);
+        width: 80px;
+        height: 80px;
+        border-radius: 50rem;
+        text-align: center;
+        line-height: 80px;
+        color: var(--white-ghost);
+        font-size: 3rem;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: none !important;
+    }
+}
+
+@media(max-width: 400px) {
+    .swiper {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .button-website {
+        right: 125px;
+        bottom: 50px;
+    }
+}
