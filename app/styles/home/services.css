@@ -87,6 +87,7 @@
 
 
 .swiper-pagination {
+    top: 10rem;
     --swiper-pagination-color: var(--dark-green);
 }
 
@@ -102,7 +103,7 @@
     
     .swiper {
         width: 100%;
-        height: 500px;
+        height: 550px;
     }
     
     .service-card i {
@@ -137,8 +138,10 @@
     }
 
     .buttons-service {
-        right: 70px;
-        bottom: 0px;
+        right: 0;
+        bottom: 0;
+        top: 18rem;
+        left: 1rem;
     }
     
 }
