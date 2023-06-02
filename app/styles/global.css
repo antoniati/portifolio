@@ -46,3 +46,23 @@ button {
   border: none;
   cursor: pointer;
 }
+
+.button {
+  display: inline-flex;
+  position: relative;
+  padding: 10px 30px;
+  margin-right: 1rem;
+  background-color: trasnparent;
+  font-weight: bold;
+  border: 0.2rem solid var(--dark-green);
+  color: var(--dark-green);
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 50rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.button:hover{
+  background: var(--dark-green);
+  color: var(--black-panther);
+}

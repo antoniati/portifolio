@@ -1,12 +1,12 @@
 .presentation {
   width: 100%;
   max-width: 1200px;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 7rem;
 }
 
 .presentation-content {
@@ -76,7 +76,7 @@
 
 .presentation-title {
   font-size: 2.6rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1rem;
   color: var(--dark-green);
 }
 
@@ -93,59 +93,36 @@
   flex-wrap: wrap;
 }
 
-.button-about {
-  padding: 0.6rem 1.5rem 0.6rem 1.5rem;
-  margin-right: 1rem;
-  background-color: trasnparent;
-  font-weight: bold;
-  border: 0.2rem solid var(--dark-green);
-  color: var(--dark-green);
-  font-size: 1.3rem;
-  text-decoration: none;
-  border-radius: 50rem;
-}
-
-.button-about:hover {
-  background-color: var(--dark-green);
-  color: var(--black-panther);
-}
-
-@media only screen and (max-width: 960px) {
+@media(max-width: 900px) {
   .presentation-title {
     font-size: 2.2rem;
   }
-  
+
   .presentation-description {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+  }
+
+  .texts-presentation {
+    padding: 0rem 2rem 0rem 2rem;
   }
 }
 
-@media only screen and (max-width: 625px) {
+@media(max-width: 500px) {
   .buttons-presentation {
     flex-direction: column;
   }
 
-  .presentation-perfil-image {
-    margin-top: 6rem;
+  .texts-presentation {
+    padding: 0rem 1rem 0rem 1rem;
   }
 
-  .presentation-content {
-    padding: 2rem;
-  }
-
-  .button-about {
-    margin-bottom: 1.6rem;
-  }
-}
-
-@media only screen and (max-width: 390px) {
-  .presentation-perfil-image {
-    margin-top: 8rem;
-  }
-}
-
-@media only screen and (max-width: 358px) {
-  .presentation-perfil-image {
-    margin-top: 16rem;
+  .buttons-presentation .button {
+    width: 100%;
+    padding: 10px 100px;
+    margin-top: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
