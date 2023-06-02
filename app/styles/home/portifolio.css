@@ -1,0 +1,70 @@
+.portifolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.portifolio-title {
+    font-size: 1.8rem;
+    color: var(--light-green);
+    margin-bottom: 2rem;
+}
+
+.swiper {
+    width: 100%;
+    height: 300px;
+    max-width: 968px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-wrapper {
+    width: 100% !important;
+    background: #333;
+}
+
+.swiper-slide {
+    background: var(--white-ghost);
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 0.6rem;
+}
+
+.swiper-slide img {
+    width: 40%;
+    height: 100%;
+    border-radius: 0.6rem 0 0 0.6rem;
+}
+
+.project-info {
+    max-width: 50%;
+    padding: 2rem;
+}
+
+.project-title, .project-description{
+    margin-bottom: 1rem;
+}
+
+.button-website, .button-more-project {
+    display: inline-block;
+    padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+    margin-right: 1rem;
+    background-color: trasnparent;
+    font-weight: bold;
+    border: 0.2rem solid var(--dark-green);
+    color: var(--dark-green);
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 50rem;
+}
+
+.button-website:hover, .button-more-project:hover {
+    background-color: var(--dark-green);
+    color: var(--black-panther);
+}

@@ -8,12 +8,18 @@
     <meta name="description"
         content="Programdor freelancer especializado em criar websites e aplicativos personalizados. Trabalho com clientes de diversos setores para fornecer soluções digitais de alta qualidade. Entre em contato e vamos transformar sua visão em realidade.">
     <title>Programador Freelancer | Felipe Antoniati - Websites e Aplicativos Personalizados</title>
+
+    <!-- STYLES -->
     <link rel="stylesheet" type="text/css" href="styles/global.css">
     <link rel="stylesheet" type="text/css" href="styles/home/navbar.css">
     <link rel="stylesheet" type="text/css" href="styles/home/presentation.css">
     <link rel="stylesheet" type="text/css" href="styles/home/services.css">
-
+    <link rel="stylesheet" type="text/css" href="styles/home/portifolio.css">
+    <!-- Swipper CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Icons -->
     <script src="https://kit.fontawesome.com/7a585beab0.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -33,20 +39,26 @@
                 <div class="nav-content-right">
                     <div class="menu">
                         <ul class="menu-list">
-                            <li class="menu-item"><a class="menu-link" onclick="MenuToggle.open()" href="#sobre">Sobre</a></li>
-                            <li class="menu-item"><a class="menu-link" onclick="MenuToggle.open()" href="#servicos">Serviços</a></li>
-                            <li class="menu-item"><a class="menu-link" onclick="MenuToggle.open()" href="#portfolio">Portfólio</a></li>
-                            <li class="menu-item"><a class="menu-link" onclick="MenuToggle.open()" href="#contato">Contato</a></li>
+                            <li class="menu-item"><a class="menu-link" onclick="MenuToggle.open()"
+                                    href="#sobre">Sobre</a></li>
+                            <li class="menu-item"><a class="menu-link" onclick="MenuToggle.open()"
+                                    href="#servicos">Serviços</a></li>
+                            <li class="menu-item"><a class="menu-link" onclick="MenuToggle.open()"
+                                    href="#portfolio">Portfólio</a></li>
+                            <li class="menu-item"><a class="menu-link" onclick="MenuToggle.open()"
+                                    href="#contato">Contato</a></li>
                         </ul>
                     </div>
                     <div class="social-icons">
-                        <a class="social-link" id="linkedin" href="https://www.linkedin.com/in/felipe-antoniati-30983b231/" target="_blank">
+                        <a class="social-link" id="linkedin"
+                            href="https://www.linkedin.com/in/felipe-antoniati-30983b231/" target="_blank">
                             <i class="fab fa-linkedin"></i>
                         </a>
                         <a class="social-link" id="github " href="https://github.com/antoniati" target="_blank">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a class="social-link" id="instagram" href="https://www.instagram.com/antoniatifelipe/" target="_blank">
+                        <a class="social-link" id="instagram" href="https://www.instagram.com/antoniatifelipe/"
+                            target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
@@ -59,7 +71,9 @@
             <div class="presentation-content">
                 <div class="texts-presentation">
                     <h1 class="presentation-title">Programador freelancer - Felipe Antoniati</h1>
-                    <p class="presentation-description">Especializado em criar websites e aplicativos personalizados que transformam suas visões em realidade. Impulsionando negócios online com soluções criativas e eficientes
+                    <p class="presentation-description">Especializado em criar websites e aplicativos personalizados que
+                        transformam suas visões em realidade. Impulsionando negócios online com soluções criativas e
+                        eficientes
                     </p>
                 </div>
                 <div class="buttons-presentation">
@@ -90,7 +104,8 @@
                 </div>
                 <div class="service-card">
                     <h2 class="service-title">Design Responsivo</h2>
-                    <p class="service-description">Criação de Layouts Responsivos e Adaptáveis a Diferentes Dispositivos e Tamanhos de Tela</p>
+                    <p class="service-description">Criação de Layouts Responsivos e Adaptáveis a Diferentes Dispositivos
+                        e Tamanhos de Tela</p>
                 </div>
                 <div class="service-card">
                     <h2 class="service-title">SEO</h2>
@@ -104,7 +119,56 @@
                 </div>
             </div>
         </section>
+        <section class="portifolio">
+            <h1 class="portifolio-title">Trabalhos Recentes</h1>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="assets/foto-test.jpg" alt="" srcset="">
+                        <div class="project-info">
+                            <h1 class="project-title">Website - Connect House</h1>
+                            <p class="project-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Minima hic, dicta quas reprehenderit dolores voluptas, aspernatur quod expedita amet
+                                exercitationem dignissimos, modi veritatis fugit. Eos eius ea numquam exercitationem
+                                nihil.</p>
+                            <div class="buttons-project">
+                                <a href="#" class="button-website">Visite o site</a>
+                                <a href="#" class="button-more-project">Veja mais projetos</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/foto-test.jpg" alt="" srcset="">
+                        <div class="project-info">
+                            <h1 class="project-title">Website - Connect House</h1>
+                            <p class="project-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Minima hic, dicta quas reprehenderit dolores voluptas, aspernatur quod expedita amet
+                                exercitationem dignissimos, modi veritatis fugit. Eos eius ea numquam exercitationem
+                                nihil.</p>
+                            <div class="buttons-project">
+                                <a href="#" class="button-website">Visite o site</a>
+                                <a href="#" class="button-more-project">Veja mais projetos</a>
+                            </div>
+                        </div>
+                    </div>
+                    ...
+                </div>
+                <!-- pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+
     </main>
+    <!-- Swipper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Script JS -->
     <script src="script.js"></script>
 </body>
 

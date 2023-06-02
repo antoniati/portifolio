@@ -23,6 +23,7 @@ html {
   
   body {
     font-family: Arial, sans-serif;
+    color: var(--black-panther);
     background-color: var(--main-color);
   }
   
@@ -38,3 +39,4 @@ html {
     border: none;
     cursor: pointer;
   }
+  
