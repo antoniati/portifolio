@@ -145,3 +145,20 @@
     }
     
 }
+
+@media(max-width: 426px) {
+
+  .swiper {
+      width: 100%;
+      height: 400px;
+  }
+    
+  .service-description span {
+    display: none;
+  }
+
+  .buttons-service {
+    right: 0;
+    bottom: 0;
+    top: 200px;
+    left: 10px;
