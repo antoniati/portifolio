@@ -1,0 +1,87 @@
+.portifolio {
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.portifolio-title {
+    color: var(--dark-green);
+    margin-bottom: 3rem;
+}
+
+.portifolio-cards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portifolio-card-container {
+    width: 90%;
+    border-top: 1px solid var(--dark-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portifolio-card {
+    width: 90%;
+    margin: 1rem 0 2rem 0;
+    display: flex;
+}
+
+.portifolio-card img {
+    width: 50%;
+}
+
+.portifolio-card-info {
+    padding: 1.6rem;
+}
+
+.portifolio-card-title {
+    color: var(--dark-green);
+    margin-bottom: 1rem;
+}
+
+.portifolio-card-description {
+    color: var(--white-ghost);
+    line-height: 2rem;
+}
+
+.portifolio-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.portifolio-buttons .button {
+    width: 250px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+
+@media(max-width: 875px) {
+    .portifolio-card {
+        flex-direction: column;
+    }
+
+    .portifolio-card img {
+        width: 100%;
+    }
+
+
+}
+
+@media(max-width: 501px) {
+    .portifolio-buttons {
+        flex-direction: column;
+    }
+
+}
