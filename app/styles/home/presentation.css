@@ -1,7 +1,8 @@
 .presentation {
   width: 100%;
   max-width: 1200px;
-  height: 100vh;
+  margin-top: 10rem;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,20 +85,22 @@
 .presentation-title {
   font-size: 2.6rem;
   margin-bottom: 1rem;
-  color: var(--dark-green);
 }
 
 .presentation-description {
   font-size: 1.6rem;
   line-height: 2.6rem;
   margin-bottom: 1.6rem;
-  color: var(--white-ghost);
 }
   
 .buttons-presentation {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.buttons-presentation .button {
+  margin-right: 1rem;
 }
 
 @media(max-width: 968px) {
@@ -137,17 +140,14 @@
     flex-direction: column;
   }
   
-  .buttons-presentation .button {
+  .buttons-presentation .button, .button-dark {
     width: 300px;
     display: flex; 
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
   }
-}
-
-@media(max-width: 375px) {
-  .presentation {
-    margin-top: 3rem;
+  .buttons-presentation .button {
+    margin-left: 1rem;
   }
 }

@@ -47,17 +47,27 @@ button {
   cursor: pointer;
 }
 
+h1, h2, h3 {
+  font-size: 1.6rem;
+  color: var(--dark-green);
+}
+
+p {
+  font-size: 1.3rem;
+  color: var(--white-ghost);
+  line-height: 2rem;
+}
+
 .button {
   display: inline-flex;
   position: relative;
   padding: 10px 30px;
-  margin-right: 1rem;
   background-color: trasnparent;
-  font-weight: bold;
-  border: 0.2rem solid var(--dark-green);
-  color: var(--dark-green);
-  font-size: 1.1rem;
   text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--dark-green);
+  border: 0.2rem solid var(--dark-green);
   border-radius: 50rem;
   transition: all 0.5s ease-in-out;
 }
@@ -65,4 +75,23 @@ button {
 .button:hover{
   background: var(--dark-green);
   color: var(--black-panther);
+}
+
+.button-dark {
+  display: inline-flex;
+  position: relative;
+  padding: 10px 30px;
+  background-color: trasnparent;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--black-panther);
+  background-color: var(--dark-green);
+  border: 0.2rem solid var(--dark-green);
+  border-radius: 50rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.button-dark:hover {
+  background-color: var(--light-green);
 }

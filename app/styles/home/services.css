@@ -1,7 +1,8 @@
 .services {
     width: 100%;
     max-width: 1200px;
-    height: 100vh;
+    margin-top: 10rem;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,8 +10,6 @@
 }
 
 .services-title {
-    font-size: 1.6rem;
-    color: var(--dark-green);
     margin-bottom: 1.6rem;
 }
 
@@ -60,16 +59,8 @@
 }
 
 .service-title {
-    color: var(--dark-green);
-    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
-
-.service-description {
-    font-size: 1.2rem;
-    line-height: 2.3rem;
-}
-
 
 .swiper-button-prev, .swiper-button-next {
     width: 50px !important;
@@ -84,7 +75,6 @@
 
 
 .swiper-pagination {
-    top: 10rem;
     --swiper-pagination-color: var(--dark-green);
 }
 
@@ -158,8 +148,7 @@
     }
 
     .service-title {
-        font-size: 1.6rem;
-        margin-bottom: 0.8rem;
+        margin-bottom: 1rem;
     }
 
     .service-description {
