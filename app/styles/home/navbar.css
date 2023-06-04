@@ -1,5 +1,6 @@
 /* Navbar */
-#navbar {
+#navbar 
+{
   width: 100%;
   display: flex;
   align-items: center;
@@ -11,7 +12,8 @@
   z-index: 999;
 }
   
-.nav-content {
+.nav-content 
+{
   width: 75rem;
   display: flex;
   align-items: center;
@@ -21,38 +23,44 @@
 
 
 /* Nav Content Left */
-.nav-content-left {
+.nav-content-left 
+{
   display: flex;
   align-items: center;
 }
 
-.logo-title {
+.logo-title 
+{
   font-size: 1.3rem;
   text-align: center;
   color: var(--white-ghost);
 }
 
-.logo-img {
+.logo-image 
+{
   width: 2.5rem;
   margin-right: 1rem;
 }
 
 
 /* Nav Content Right */
-.nav-content-right {
+.nav-content-right 
+{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.menu-list {
+.menu-list 
+{
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem;
 }
 
-.menu-link, .social-link {
+.menu-link, .social-link 
+{
   position: relative;
   font-size: 1rem;
   font-weight: bold;
@@ -61,34 +69,42 @@
   margin-right: 0.6rem;
 }
 
-.menu-link:hover {
+.menu-link:hover 
+{
   border-bottom: 2px solid var(--lidarkght-green);
   color: var(--dark-green);
 }
 
-.social-link {
+.social-link 
+{
   font-size: 1.5rem;
 }
 
-#linkedin:hover {
+#linkedin:hover 
+{
   color: #00acee;
 }
 
-.social-link:hover {
+.social-link:hover 
+{
   color: #ded1c1;
 }
 
-#instagram:hover {
+#instagram:hover 
+{
   color: #Bc2a8d;
 }
 
 /* Responsividade & Menu Toggle */
-@media(max-width: 875px) {
-  .nav-content-right {
+@media(max-width: 875px) 
+{
+  .nav-content-right 
+  {
     display: none;
   } 
   
-  .nav-content-left {
+  .nav-content-left 
+  {
     width: 100%;
     display: flex;
     align-items: center;
@@ -97,13 +113,15 @@
 
   
   /* Menu-toggle */
-  .menu-toggle {
+  .menu-toggle 
+  {
     display: inline-block;
     cursor: pointer;
     margin-right: 2rem;
   }
   
-  .menu-toggle span {
+  .menu-toggle span 
+  {
     display: block;
     width: 2rem;
     height: 0.2rem;
@@ -112,28 +130,34 @@
     transition: transform 0.3s, background-color 0.3s;
   }
   
-  .menu-toggle:hover span:nth-child(2) {
+  .menu-toggle:hover span:nth-child(2) 
+  {
     background-color: var(--light-green);
   }
   
-  .menu-toggle.open span:nth-child(1) {
+  .menu-toggle.open span:nth-child(1) 
+  {
     transform: rotate(45deg) translate(5px, 5px);
   }
   
-  .menu-toggle.open span:nth-child(2) {
+  .menu-toggle.open span:nth-child(2) 
+  {
     opacity: 0;
   }
   
-  .menu-toggle.open span:nth-child(3) {
+  .menu-toggle.open span:nth-child(3) 
+  {
     transform: rotate(-45deg) translate(7px, -8px);
   }
 
   
-  .nav-content.open {
+  .nav-content.open 
+  {
     flex-direction: column;
   }
 
-  .nav-content-right.open {
+  .nav-content-right.open 
+  {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -142,7 +166,8 @@
     align-items: center;
   }
 
-  .nav-content-right.open .menu-list {
+  .nav-content-right.open .menu-list 
+  {
     display: block;
     width: 100%;
     margin: 0rem 10rem 5rem 0rem;
@@ -150,27 +175,33 @@
     border-bottom: 1px solid var(--dark-green);
   }
 
-  .nav-content-right.open .menu-item {
+  .nav-content-right.open .menu-item 
+  {
     width: 100%;
     margin-top: 2rem;
   }
   
-  .nav-content-right.open .menu-link {
+  .nav-content-right.open .menu-link 
+  {
     font-size: 2rem;
     margin-left: 1rem;
   }
 
-  .social-link {
+  .social-link 
+  {
     font-size: 2.3rem;
   }
 
-  .logo-img {
+  .logo-img 
+  {
     margin-left: 1rem;
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .logo-title {
+@media only screen and (max-width: 500px) 
+{
+  .logo-title 
+  {
     display: none;
   }
 }

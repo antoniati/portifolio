@@ -12,17 +12,15 @@ var MenuToggle = {
     }
   };
 
-
   // Swiper - SLIDE SHOW CARDS SERVICES
   const swiper = new Swiper('.swiper', {
     autoplay: {
-      delay: 7000,
+      delay: 8000,
     },
     // pagination
     pagination: {
       el: '.swiper-pagination',
     },
-  
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',

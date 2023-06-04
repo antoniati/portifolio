@@ -1,4 +1,5 @@
-.services {
+.services 
+{
     width: 100%;
     max-width: 1200px;
     margin-top: 10rem;
@@ -9,20 +10,24 @@
     flex-direction: column;
 }
 
-.services-title {
+.services-title 
+{
     margin-bottom: 1.6rem;
 }
 
-.swiper {
+.swiper 
+{
     width: 968px;
     height: 350px;
 }
 
-.swiper-wrapper {
+.swiper-wrapper 
+{
     width: 100% !important;
 }
 
-.swiper-slide {
+.swiper-slide 
+{
     max-width: 968px;
     display: flex !important;
     align-items: center;
@@ -30,7 +35,8 @@
     border-radius: 0.6rem;
 }
 
-.service-card {
+.service-card 
+{
     width: 90%;
     height: 100%;
     display: flex;
@@ -42,27 +48,32 @@
     color: var(--white-ghost);
 }
 
-.service-card i {
+.service-card i 
+{
     color: var(--dark-green);
     text-align: center;
     width: 100%;
     font-size: 5rem;
 }
 
-.service-info {
+.service-info 
+{
     position: relative;
     padding: 1rem;
 }
 
-.service-info .button {
+.service-info .button 
+{
     margin: 1rem 0rem 1rem 22rem;    
 }
 
-.service-title {
+.service-title 
+{
     margin-bottom: 1rem;
 }
 
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev, .swiper-button-next 
+{
     width: 50px !important;
     height: 50px !important;
     border-radius: 50%;
@@ -74,20 +85,24 @@
 }
 
 
-.swiper-pagination {
+.swiper-pagination 
+{
     --swiper-pagination-color: var(--dark-green);
 }
 
 
 
-@media(max-width: 967px) {
+@media(max-width: 967px) 
+{
 
-    .swiper {
+    .swiper 
+    {
         width: 100%;
         height: 450px;
     }
 
-    .service-card {
+    .service-card 
+    {
         width: 92%;
         display: flex;
         align-items: center;
@@ -96,22 +111,27 @@
         text-align: center;
     }
 
-    .service-card i {
+    .service-card i 
+    {
         font-size: 3rem;
         margin-bottom: 1rem;
     }
 
-    .service-description {
+    .service-description 
+    {
         margin-bottom: 1rem;
     }
 
-    .service-info .button {
+    .service-info .button 
+    {
         margin: 0;
     }
 }
 
-@media(max-width: 550px) {
-    .service-card {
+@media(max-width: 550px) 
+{
+    .service-card 
+    {
         width: 92%;
         display: flex;
         align-items: center;
@@ -120,16 +140,19 @@
         text-align: center;
     }
     
-    .swiper {
+    .swiper 
+    {
         width: 100%;
         height: 450px;
     }
 
-    .service-info .button {
+    .service-info .button 
+    {
         margin: 0;
     }
     
-    .service-card i {
+    .service-card i 
+    {
         font-size: 2rem;
         text-align: center;
         line-height:  70px;
@@ -142,25 +165,30 @@
         transition: background-color 0.5s ease-in-out;
     }
 
-    .service-info {
+    .service-info 
+    {
         width: 100%;
         padding: 0;
     }
 
-    .service-title {
+    .service-title 
+    {
         margin-bottom: 1rem;
     }
 
-    .service-description {
+    .service-description 
+    {
         font-size: 1rem;
         margin-bottom: 1rem;
     }
 
-    .service-description span {
+    .service-description span 
+    {
         display: none;
     }
 
-    .swiper-button-prev, .swiper-button-next {
+    .swiper-button-prev, .swiper-button-next 
+    {
         display: none !important;
     }
     

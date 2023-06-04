@@ -1,4 +1,5 @@
-.portifolio {
+.portifolio 
+{
     width: 100%;
     max-width: 1200px;
     margin-top: 10rem;
@@ -9,11 +10,13 @@
     flex-direction: column;
 }
 
-.portifolio-title {
+.portifolio-title 
+{
     margin-bottom: 2rem;
 }
 
-.portifolio-cards {
+.portifolio-cards 
+{
     width: 100%;
     height: 100%;
     display: flex;
@@ -21,7 +24,8 @@
     align-items: center;
 }
 
-.portifolio-card-container {
+.portifolio-card-container 
+{
     width: 95%;
     border-top: 1px solid var(--dark-green);
     display: flex;
@@ -29,30 +33,36 @@
     align-items: center;
 }
 
-.portifolio-card {
+.portifolio-card 
+{
     width: 90%;
     margin: 1rem 0 2rem 0;
     display: flex;
 }
 
-.portifolio-card img {
+.portifolio-card img 
+{
     width: 40%;
 }
 
-.portifolio-card-info {
+.portifolio-card-info 
+{
     padding: 1.6rem;
 }
 
-.portifolio-card-title, .portifolio-card-description {
+.portifolio-card-title, .portifolio-card-description 
+{
     margin-bottom: 1rem;
 }
 
-.portifolio-buttons {
+.portifolio-buttons 
+{
     display: flex;
     align-items: center;
 }
 
-.portifolio-buttons .button {
+.portifolio-buttons .button 
+{
     display: flex; 
     align-items: center;
     justify-content: center;
@@ -60,24 +70,30 @@
 }
 
 
-@media(max-width: 1050px) {
-    .portifolio-card {
+@media(max-width: 1050px) 
+{
+    .portifolio-card 
+    {
         flex-direction: column;
     }
 
-    .portifolio-card img {
+    .portifolio-card img 
+    {
         width: 100%;
     }
 
 
 }
 
-@media(max-width: 501px) {
-    .portifolio-buttons {
+@media(max-width: 501px) 
+{
+    .portifolio-buttons 
+    {
         flex-direction: column;
     }
 
-    .portifolio-buttons .button-dark, .button {
+    .portifolio-buttons .button-dark, .button 
+    {
         width: 100%;
         margin-bottom: 1rem;
         display: flex;
@@ -85,11 +101,13 @@
         justify-content: center;
     }
 
-    .portifolio-buttons .button {
+    .portifolio-buttons .button 
+    {
         margin-left: 1rem;
       }
 
-    .portifolio-card-description {
+    .portifolio-card-description 
+    {
         font-size: 1rem;
     }
 }

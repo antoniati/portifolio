@@ -8,23 +8,28 @@
     <meta name="description"
         content="Programdor freelancer especializado em criar websites modernos e personalizados. Trabalho com clientes de diversos setores para fornecer soluções digitais de alta qualidade. Entre em contato e vamos transformar sua visão em realidade.">
     <title>Programador Freelancer | Felipe Antoniati - Websites Modernos e Personalizados</title>
+
     <!-- STYLES -->
     <link rel="stylesheet" type="text/css" href="styles/global.css">
     <link rel="stylesheet" type="text/css" href="styles/home/navbar.css">
     <link rel="stylesheet" type="text/css" href="styles/home/presentation.css">
     <link rel="stylesheet" type="text/css" href="styles/home/services.css">
     <link rel="stylesheet" type="text/css" href="styles/home/portifolio.css">
+
     <!-- Swipper CSS CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/7a585beab0.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body> 
+
     <header>
+        <!-- Navigation Page -->
         <nav id="navbar">
-            <div class="nav-content container">
+            <div class="nav-content">
                 <div class="nav-content-left">
-                    <img src="assets/logo.svg" alt="Logo" class="logo-img">
+                    <img src="assets/logo.svg" alt="Logo" class="logo-image">
                     <h1 class="logo-title">Felipe Antoniati</h1>
                     <div class="menu-toggle" onclick="MenuToggle.open()">
                         <span></span>
@@ -36,26 +41,68 @@
                 <div class="nav-content-right">
                     <div class="menu">
                         <ul class="menu-list">
-                            <li class="menu-item"><a class="menu-link" onclick="MenuToggle.open()"
-                                    href="#sobre">Sobre</a></li>
-                            <li class="menu-item"><a class="menu-link" onclick="MenuToggle.open()"
-                                    href="#servicos">Serviços</a></li>
-                            <li class="menu-item"><a class="menu-link" onclick="MenuToggle.open()"
-                                    href="#portfolio">Portfólio</a></li>
-                            <li class="menu-item"><a class="menu-link" onclick="MenuToggle.open()"
-                                    href="#contato">Contato</a></li>
+                            <li class="menu-item">
+                                <a 
+                                    class="menu-link" 
+                                    href="#sobre"
+                                    onclick="MenuToggle.open()"
+                                >
+                                    Sobre
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a 
+                                    class="menu-link" 
+                                    href="#servicos"
+                                    onclick="MenuToggle.open()"
+                                >
+                                    Serviços
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a 
+                                    class="menu-link" 
+                                    href="#portfolio"
+                                    onclick="MenuToggle.open()"
+                                >
+                                    Portfólio
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a 
+                                    class="menu-link" 
+                                    href="#contato"
+                                    onclick="MenuToggle.open()"
+                                >
+                                    Contato
+                                </a>
+                            </li>
                         </ul>
                     </div>
+
                     <div class="social-icons">
-                        <a class="social-link" id="linkedin"
-                            href="https://www.linkedin.com/in/felipe-antoniati-30983b231/" target="_blank">
+                        <a 
+                            id="linkedin"
+                            class="social-link" 
+                            href="https://www.linkedin.com/in/felipe-antoniati-30983b231/" 
+                            target="_blank"
+                        >
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a class="social-link" id="github " href="https://github.com/antoniati" target="_blank">
+                        <a 
+                            id="github " 
+                            class="social-link" 
+                            href="https://github.com/antoniati" 
+                            target="_blank"
+                        >
                             <i class="fab fa-github"></i>
                         </a>
-                        <a class="social-link" id="instagram" href="https://www.instagram.com/antoniatifelipe/"
-                            target="_blank">
+                        <a 
+                            id="instagram" 
+                            class="social-link" 
+                            href="https://www.instagram.com/antoniatifelipe/"
+                            target="_blank"
+                        >
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
@@ -63,125 +110,188 @@
             </div>
         </nav>
     </header>
+    
     <main>
+        <!-- Presentation Section -->
         <section class="presentation">
             <div class="presentation-content">
                 <div class="box-image">
                     <div class="box-image-content">
-                        <img class="presentation-perfil-image"src="assets/perfil.jpg" alt="Foto do Programador Felipe Antoniati">
+                        <img 
+                            class="perfil-image"
+                            src="assets/perfil.jpg" 
+                            alt="Foto do Programador Felipe Antoniati"
+                        >
                     </div>
                 </div>
+
                 <div class="presentation-texts">
-                    <h1 class="presentation-title">Programador freelancer <span>-</span> Felipe Antoniati</h1>
-                    <p class="presentation-description">Especializado em criar websites modernos e personalizados com soluções criativas e eficientes. Utilizando as melhores tecnologias</p>
+                    <h1 class="presentation-title">
+                        Programador freelancer 
+                        <span>-</span> Felipe Antoniati
+                    </h1>
+                    <p class="presentation-description">
+                        Especializado em criar websites modernos e personalizados com soluções criativas e eficientes. Utilizando as melhores tecnologias
+                    </p>
                 </div>
-                <div class="buttons-presentation">
-                    <div class="buttons-presentation">
+
+                <div class="presentation-buttons">
+                    <div class="presentation-buttons">
                         <a href="#about" class="button"><span>Saiba Mais</span></a>
-                        <a href="#about" class="button-dark"><span>Entre em contato</span></a>
+                        <a href="#contact" class="button-dark"><span>Entre em contato</span></a>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Service Section -->
         <section class="services">
             <h1 class="services-title">Serviços e Soluções</h1>
+
+            <!-- Slide Cards Service - Swiper -->
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="service-card">
                             <i class="fas fa-code"></i>
                             <div class="service-info">
-                                <h3 class="service-title">Desenvolvimento Web</h3>
-                                <p class="service-description">Criação de websites responsivos e personalizados, utilizando as mais recentes tecnologias e práticas de desenvolvimento<span>, soluções web sob medida para atender às suas necessidades e impulsionar o crescimento do seu negócio online</span></p>
-                                <a href="#" class="button">Saiba Mais</a>
+                                <h3 class="service-title">
+                                    Desenvolvimento Web
+                                </h3>
+                                <p class="service-description">
+                                    Criação de websites responsivos e personalizados, utilizando as mais recentes tecnologias e práticas de desenvolvimento
+                                    <span>, soluções web sob medida para atender às suas necessidades e impulsionar o crescimento do seu negócio online</span>
+                                </p>
+                                <a href="#contact" class="button">
+                                    Saiba Mais
+                                </a>
                             </div>
                         </div>
                     </div>
+
                     <div class="swiper-slide">
                         <div class="service-card">
                             <i class="fas fa-paint-brush"></i>
                             <div class="service-info">
-                                <h3 class="service-title">Web Design</h3>
-                                <p class="service-description">Criação de designs modernos e atraentes que cativam os
-                                    visitantes do seu site<span>. Utilizando princípios de usabilidade e experiência do
-                                        usuário
-                                        para garantir uma interface amigável e intuitiva, proporcionando uma experiência
-                                        visualmente agradável</span></p>
-                                        <a href="#" class="button">Saiba Mais</a>
+                                <h3 class="service-title">
+                                    Web Design
+                                </h3>
+                                <p class="service-description">
+                                    Criação de designs modernos e atraentes que cativam os visualmente agradável
+                                </p>
+                                <a href="#" class="button">
+                                    Saiba Mais
+                                </a>
                             </div>
                         </div>
                     </div>
+
                     <div class="swiper-slide">
                         <div class="service-card">
                             <i class="fas fa-chart-line"></i>
                             <div class="service-info">
-                                <h3 class="service-title">SEO</h3>
-                                <p class="service-description">Otimização de sites para melhorar sua visibilidade nos
-                                    motores de
-                                    busca<span>. Através de estratégias avançadas de SEO, ajudando seu site a obter rankings
-                                        mais altos
-                                        nas páginas de resultados, aumentando o tráfego orgânico</span></p>
-                                        <a href="#" class="button">Saiba Mais</a>
+                                <h3 class="service-title">
+                                    SEO
+                                </h3>
+                                <p class="service-description">
+                                    Otimização de sites para melhorar sua visibilidade nos motores de busca
+                                    <span>. Através de estratégias avançadas de SEO, ajudando seu site a obter rankings mais altos nas páginas de resultados, aumentando o tráfego orgânico</span>
+                                </p>
+                                <a href="#contact" class="button">
+                                    Saiba Mais
+                                </a>
                             </div>
                         </div>
                     </div>
+
                     <div class="swiper-slide">
                         <div class="service-card">
                             <i class="fas fa-wrench"></i>
                             <div class="service-info">
-                                <h3 class="service-title">Suporte e Manutenção</h3>
-                                <p class="service-description">Ofereço serviços de suporte técnico e manutenção contínua
-                                    <span>para
-                                        garantir que seu site esteja sempre funcionando corretamente. Soluciono problemas e forneço atualizações regulares, garantindo uma melhor experiência</span></p>
-                                        <a href="#" class="button">Saiba Mais</a>
+                                <h3 class="service-title">
+                                    Suporte e Manutenção
+                                </h3>
+                                <p class="service-description">
+                                    Ofereço serviços de suporte técnico e manutenção contínua
+                                    <span>para garantir que seu site esteja sempre funcionando corretamente. Soluciono problemas e forneço atualizações regulares, garantindo uma melhor experiência</span>
+                                </p>
+                                <a href="#contact" class="button">
+                                    Saiba Mais
+                                </a>
                             </div>
                         </div>
                     </div>
                     ...
                 </div>
+                <!-- Buttons Navigate Cards -->
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
+
         </section>
+
+        <!-- Portifolio Section -->
         <section class="portifolio">
             <h1 class="portifolio-title">Trabalhos Recentes</h1>
             <div class="portifolio-cards">
                 <div class="portifolio-card-container">
                     <div class="portifolio-card">
-                        <img src="assets/projects/tier.png" alt="tier project">
+                        <img 
+                            src="assets/projects/tier.png" 
+                            alt="tier project"
+                        >
+
                         <div class="portifolio-card-info">
-                            <h3 class="portifolio-card-title">Tiê - Website</h3>
+                            <h3 class="portifolio-card-title">
+                                Tiê - Website
+                            </h3>
                             <p class="portifolio-card-description">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae earum iste temporibus alias, voluptates ullam iusto quaerat, placeat id tempora quibusdam.
                             </p>
                             <div class="portifolio-buttons">
-                                <a href="#" class="button">Visite o site</a>
-                                <a href="#" class="button-dark">Portifolio</a>
+                                <a href="#" class="button">
+                                    Visite o site
+                                </a>
+                                <a href="#" class="button-dark">
+                                    Portifolio
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="portifolio-card-container">
                     <div class="portifolio-card">
-                        <img src="assets/projects/wordpress.jpg" alt="wordpress project">
+                        <img 
+                            src="assets/projects/wordpress.jpg" 
+                            alt="wordpress project"
+                        >
                         <div class="portifolio-card-info">
-                            <h3 class="portifolio-card-title">Tiê - Website</h3>
+                            <h3 class="portifolio-card-title">
+                                Tiê - Website
+                            </h3>
                             <p class="portifolio-card-description">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae earum iste temporibus alias, voluptates ullam iusto quaerat, placeat id tempora quibusdam.
                             </p>
                             <div class="portifolio-buttons">
-                                <a href="#" class="button">Visite o site</a>
-                                <a href="#" class="button-dark">Portifolio</a>
+                                <a href="#" class="button">
+                                    Visite o site
+                                </a>
+                                <a href="#" class="button-dark">
+                                    Portifolio
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
     </main>
+
     <!-- Swipper JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
     <!-- Script JS -->
     <script src="script.js"></script>
 </body>
