@@ -35,7 +35,7 @@
   content: "";
   position: absolute;
   inset: -10px 80px;
-  background: var(--dark-green);
+  background: var(--dark-blue);
   transition: 0.5s;
   animation: animate 4s linear infinite;
 }
@@ -71,7 +71,7 @@
 {
   position: absolute;
   inset: 10px;
-  border: 6px solid var(--dark-green);
+  border: 6px solid var(--dark-blue);
   z-index: 3;
   border-radius: 50%;
   overflow: hidden;
