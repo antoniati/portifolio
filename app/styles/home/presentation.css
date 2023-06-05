@@ -1,9 +1,8 @@
-.presentation 
+#presentation 
 {
   width: 100%;
   max-width: 1200px;
-  margin-top: 10rem;
-
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

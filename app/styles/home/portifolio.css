@@ -1,18 +1,14 @@
-.portifolio 
+#portifolio 
 {
     width: 100%;
     max-width: 1200px;
-    margin-top: 10rem;
+    min-height: 100vh;
 
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-}
-
-.portifolio-title 
-{
-    margin-bottom: 2rem;
+    margin-top: 5rem;
 }
 
 .portifolio-cards 
@@ -31,12 +27,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 2rem;
 }
 
 .portifolio-card 
 {
     width: 90%;
-    margin: 1rem 0 2rem 0;
+    margin: 1rem auto;
     display: flex;
 }
 
@@ -95,7 +92,6 @@
     .portifolio-buttons .button-dark, .button 
     {
         width: 100%;
-        margin-bottom: 1rem;
         display: flex;
         align-items: center;
         justify-content: center;

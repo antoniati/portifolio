@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" href="styles/home/presentation.css">
     <link rel="stylesheet" type="text/css" href="styles/home/services.css">
     <link rel="stylesheet" type="text/css" href="styles/home/portifolio.css">
+    <link rel="stylesheet" type="text/css" href="styles/home/contact.css">
+    <link rel="stylesheet" type="text/css" href="styles/home/footer.css">
 
     <!-- Swipper CSS CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -44,7 +46,7 @@
                             <li class="menu-item">
                                 <a 
                                     class="menu-link" 
-                                    href="#sobre"
+                                    href="#"
                                     onclick="MenuToggle.open()"
                                 >
                                     Sobre
@@ -53,7 +55,7 @@
                             <li class="menu-item">
                                 <a 
                                     class="menu-link" 
-                                    href="#servicos"
+                                    href="#services"
                                     onclick="MenuToggle.open()"
                                 >
                                     Serviços
@@ -62,7 +64,7 @@
                             <li class="menu-item">
                                 <a 
                                     class="menu-link" 
-                                    href="#portfolio"
+                                    href="#portifolio"
                                     onclick="MenuToggle.open()"
                                 >
                                     Portfólio
@@ -71,7 +73,7 @@
                             <li class="menu-item">
                                 <a 
                                     class="menu-link" 
-                                    href="#contato"
+                                    href="#contact"
                                     onclick="MenuToggle.open()"
                                 >
                                     Contato
@@ -113,7 +115,7 @@
     
     <main>
         <!-- Presentation Section -->
-        <section class="presentation">
+        <section id="presentation">
             <div class="presentation-content">
                 <div class="box-image">
                     <div class="box-image-content">
@@ -144,8 +146,8 @@
             </div>
         </section>
 
-        <!-- Service Section -->
-        <section class="services">
+        <!-- Services Section -->
+        <section id="services">
             <h1 class="services-title">Serviços e Soluções</h1>
 
             <!-- Slide Cards Service - Swiper -->
@@ -177,7 +179,10 @@
                                     Web Design
                                 </h3>
                                 <p class="service-description">
-                                    Criação de designs modernos e atraentes que cativam os visualmente agradável
+                                    Criação de designs modernos e atraentes que cativam os visitantes do seu site. Com princípios de usabilidade e experiência do usuário
+                                    <span>
+                                        para garantir uma interface amigável e intuitiva, proporcionando uma experiência visualmente agradável
+                                    </span> 
                                 </p>
                                 <a href="#" class="button">
                                     Saiba Mais
@@ -232,7 +237,7 @@
         </section>
 
         <!-- Portifolio Section -->
-        <section class="portifolio">
+        <section id="portifolio">
             <h1 class="portifolio-title">Trabalhos Recentes</h1>
             <div class="portifolio-cards">
                 <div class="portifolio-card-container">
@@ -287,8 +292,80 @@
             </div>
         </section>
 
+        <!--Contact Section -->
+        <section id="contact">
+            <h1 class="contact-title">Contato</h1>
+            <div class="contact-content">
+                <!-- Form Contact-->
+                <form class="contact-form">
+                    <h3 class="contact-form-title">
+                        Envie uma mensagem
+                    </h3>
+                    <div class="contact-form-options">
+                        <label for="input-name">Digite seu Nome:</label>
+                        <input class="input-name" type="text" name="name" placeholder="Jhon">
+                        <label for="input-email">Insira seu Email:</label>
+                        <input class="input-email" type="email" name="email" placeholder="jhon@email.com">
+                        <label for="service-select">Solicite um Serviço:</label>
+                        <select name="services" class="service-select">
+                          <option value="">--Por favor escolha um serviço--</option>
+                          <option value="development">Desenvolvimento Web</option>
+                          <option value="design">Web Design</option>
+                          <option value="seo">SEO</option>
+                          <option value="support">Suporte Técnico</option>
+                          <option value="maintenance">Manutenção de Site</option>
+                          <option value="other">Outro</option>
+                        </select>
+                        <label for="story">Mensagem:</label>
+                        <textarea id="story" name="story" rows="5" cols="33" placeholder="Escreva aqui sua mensagem..."></textarea>
+                        <a href="" class="button">Enviar</a>
+                    </div>
+                </form>
+            
+                <div class="contact-whatsapp">
+                    <h1 class="contact-whatsapp-title">
+                        Fale comigo
+                    </h1>
+                    <div class="button-dark">
+                        <div class="i-container">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        </div>
+                        <div class="whatsapp-text">
+                            <span>Whatsapp</span>
+                        </div>
+                    </div>
+                </div>
+                    <!-- Form Social Media -->
+                    <div class="contact-social-medias">
+                        <h1 class="contact-social-medias-title">
+                          Siga-me nas Redes Sociais
+                        </h1>
+                        <div class="contact-social-icons">
+                          <a id="linkedin" class="social-link" href="https://www.linkedin.com/in/felipe-antoniati-30983b231/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                          </a>
+                          <a id="github" class="social-link" href="https://github.com/antoniati" target="_blank">
+                            <i class="fab fa-github"></i>
+                          </a>
+                          <a id="instagram" class="social-link" href="https://www.instagram.com/antoniatifelipe/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                          </a>
+                        </div>
+                      </div>
+            </div>
+          </section>
     </main>
-
+    <div class="footer-container">
+        <footer class="footer">
+            <img src="assets/logo.svg" alt="Logo do Programador Felipe Antoniati">
+          <p class="footer-text">
+            &copy; 2023 Felipe Antoniati.
+            <span>
+                Todos os direitos reservados.
+            </span> 
+          </p>
+        </footer>
+      </div>
     <!-- Swipper JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 

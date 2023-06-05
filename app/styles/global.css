@@ -1,9 +1,9 @@
 :root 
 {
   /*colors*/
-  --main-color: #222945;
-  --dark-green: #15B097;
-  --light-green: #71F79F;
+  --main-color: #1b2037;
+  --dark-green: #18c9ab;
+  --light-green: #5BECD4;
   --white-ghost: #EEEEFF;
   --black-panther: #1c1c1c;
 
@@ -83,12 +83,6 @@ p
   transition: all 0.5s ease-in-out;
 }
 
-.button:hover
-{
-  background: var(--dark-green);
-  color: var(--black-panther);
-}
-
 .button-dark 
 {
   display: inline-flex;
@@ -105,7 +99,8 @@ p
   transition: all 0.5s ease-in-out;
 }
 
-.button-dark:hover 
+.button-dark:hover, .button:hover
 {
+  color: var(--black-panther);
   background-color: var(--light-green);
 }
