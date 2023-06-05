@@ -33,7 +33,6 @@
 {
   font-size: 1.3rem;
   text-align: center;
-  color: var(--white-ghost);
 }
 
 .logo-image 
@@ -64,15 +63,14 @@
   position: relative;
   font-size: 1rem;
   font-weight: bold;
-  color: var(--white-ghost);
+  color: var(--dark-blue);
   padding: 0.6rem;
   margin-right: 0.6rem;
 }
 
 .menu-link:hover 
 {
-  border-bottom: 2px solid var(--lidarkght-green);
-  color: var(--dark-green);
+  color: var(--light-green);
 }
 
 .social-link 
@@ -87,7 +85,7 @@
 
 .social-link:hover 
 {
-  color: #ded1c1;
+  color: #333;
 }
 
 #instagram:hover 
@@ -126,7 +124,7 @@
     width: 2rem;
     height: 0.2rem;
     margin-bottom: 5px;
-    background-color: var(--white-ghost);
+    background-color: var(--dark-blue);
     transition: transform 0.3s, background-color 0.3s;
   }
   
@@ -172,7 +170,7 @@
     width: 100%;
     margin: 0rem 10rem 5rem 0rem;
     padding: 5rem 0rem 5rem 0rem;
-    border-bottom: 1px solid var(--dark-green);
+    border-bottom: 1px solid var(--dark-blue);
   }
 
   .nav-content-right.open .menu-item 
@@ -185,6 +183,10 @@
   {
     font-size: 2rem;
     margin-left: 1rem;
+  }
+
+  .social-icons {
+    color: var(--dark-blue);
   }
 
   .social-link 

@@ -43,14 +43,14 @@
     align-items: center;
     justify-cotent: center;
     padding: 2rem;
-    border: 1px solid var(--dark-green);
+    border: 2px solid var(--dark-blue);
     border-radius: 1rem;
-    color: var(--white-ghost);
+    color: var(--dark-blue);
 }
 
 .service-card i 
 {
-    color: var(--dark-green);
+    color: var(--dark-blue);
     text-align: center;
     width: 100%;
     font-size: 5rem;
@@ -80,14 +80,14 @@
     text-align: center;
     font-weight: bold;
     --swiper-navigation-size: 25px;
-    --swiper-navigation-color: var(--white-ghost);
-    background: var(--dark-green);
+    --swiper-navigation-color: var(--main-color);
+    background: var(--dark-blue);
 }
 
 
 .swiper-pagination 
 {
-    --swiper-pagination-color: var(--dark-green);
+    --swiper-pagination-color: var(--dark-blue);
 }
 
 
@@ -157,11 +157,11 @@
         font-size: 2rem;
         text-align: center;
         line-height:  70px;
-        color: var(--white-ghost);
+        color: white;
         width: 70px;
         height: 70px;
         border-radius: 50%;
-        background-color: var(--dark-green);
+        background-color: var(--dark-blue);
         margin-bottom: 1.6rem;
         transition: background-color 0.5s ease-in-out;
     }
