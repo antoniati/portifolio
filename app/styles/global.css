@@ -53,6 +53,7 @@ button
 {
   border: none;
   cursor: pointer;
+  background: none;
 }
 
 h1, h2, h3 
