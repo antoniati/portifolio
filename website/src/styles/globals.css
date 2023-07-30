@@ -48,19 +48,6 @@ button {
   background: none;
 }
 
-h1,
-h2,
-h3 {
-  font-size: 1.6rem;
-  color: var(--dark-blue);
-}
-
-p {
-  font-size: 1.3rem;
-  color: var(--white-ghost);
-  line-height: 2rem;
-}
-
 .button {
   display: inline-flex;
   position: relative;
