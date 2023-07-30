@@ -1,0 +1,62 @@
+/* ToggleMenu.module.css */
+
+.toggleMenuButton {
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggleMenuButton span {
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Posição das linhas do botão "hamburguer" */
+.toggleMenuButton span:nth-child(1) {
+  top: 0;
+}
+
+.toggleMenuButton span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.toggleMenuButton span:nth-child(3) {
+  bottom: 0;
+}
+
+/* Estilo do botão "hamburguer" */
+.toggleMenuButton:not(.open) span:nth-child(1),
+.toggleMenuButton:not(.open) span:nth-child(3) {
+  width: 20px;
+}
+
+/* Estilo do botão "X" */
+.toggleMenuButton.open span:nth-child(1) {
+  transform: translateY(12px) rotate(45deg);
+}
+
+.toggleMenuButton.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.toggleMenuButton.open span:nth-child(3) {
+  transform: translateY(-12px) rotate(-45deg);
+}
+
+
+@media screen and (max-width: 900px) {
+  .toggleMenuButton {
+    display: flex;
+  }
+}

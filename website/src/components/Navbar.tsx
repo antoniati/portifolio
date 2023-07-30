@@ -1,5 +1,6 @@
 import { constantsData } from "@/data/constantsData";
 import styles from "@/styles/Navbar.module.css";
+import ToggleMenu from "./ToggleMenu";
 
 const Navbar = () => {
     const { logo, pageLinks, navItemTexts } = constantsData;
@@ -13,7 +14,6 @@ const Navbar = () => {
                         {logo.logoText} 
                         <span>Programador Freelancer</span>
                     </h1>
-                    
                 </div>
                 <ul className={styles.navList}>
                     <a className={`${styles.navItem} ${styles.navItemWrapper}`} href={pageLinks.URLToAboutPage}>
@@ -29,6 +29,7 @@ const Navbar = () => {
                         {navItemTexts.contact}
                     </a>
                 </ul>
+                <ToggleMenu />
             </div>
         </nav>
     );
