@@ -1,8 +1,13 @@
 import { ConstantsDataProps } from "@/types/constantsDataTypes";
 
 export const constantsData: ConstantsDataProps = {
+    "personalInfo": {
+        "name": "Felipe Antoniati",
+        "job": "Programador Freelancer",
+        "imagePerfil": "/images/perfil.jpg",
+        "imagePerfilAltText": "Imagem do Programador Felipe Antoniati"
+    },
     "logo": {
-        "logoText":"Felipe Antoniati",
         "logoImageURL": "https://felipeantoniati.vercel.app/logo.svg",
         "logoAltText": "Logo do Edifício Entre Mares"
     },

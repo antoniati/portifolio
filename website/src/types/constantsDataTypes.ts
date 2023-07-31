@@ -1,6 +1,11 @@
 export interface ConstantsDataProps {
+    personalInfo: {
+        name: string;
+        job: string;
+        imagePerfil: string;
+        imagePerfilAltText: string;
+    },
     logo: {
-        logoText: string;
         logoImageURL: string;
         logoAltText: string;
     },

@@ -1,7 +1,12 @@
 import Head from 'next/head'
 import Navbar from '@/components/Navbar'
+import { constantsData } from "@/data/constantsData";
+import styles from "@/styles/HomePage.module.css";
+import PerfilImage from '@/components/PerfilImage';
 
 export default function Home() {
+  const { personalInfo } = constantsData;
+
   return (
     <>
       <Head>
@@ -11,8 +16,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main>
-        <h1>Hello World</h1>
+      <main id={styles.main}>
+        <section className={styles.introSection}>
+          <PerfilImage
+            imageURL={personalInfo.imagePerfil}
+            imageAltText={personalInfo.imagePerfilAltText}
+          />
+        </section>
       </main>
     </>
   )

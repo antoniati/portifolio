@@ -5,7 +5,7 @@ import { constantsData } from '@/data/constantsData';
 import styles from '@/styles/Navbar.module.css';
 
 const Navbar = () => {
-  const { logo, pageLinks, navItemTexts } = constantsData;
+  const { logo, pageLinks, navItemTexts, personalInfo } = constantsData;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenuHandler = () => {
@@ -22,7 +22,7 @@ const Navbar = () => {
             alt={logo.logoAltText}
           />
           <h1 className={styles.navbarLogoText}>
-            {logo.logoText}
+            {personalInfo.name}
             {/* <span>Programador Freelancer</span> */}
           </h1>
         </div>
