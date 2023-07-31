@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;600&family=Open+Sans:ital@1&family=Work+Sans:wght@300;600&display=swap');
+
 :root {
   /*colors*/
   --white: #FBFBFB;
   --white-ghost: #ffffff;
   --dark-blue: #4158B1;
   --light-blue: #5371e8;
-  --black-panther: #1c1c1c;
+  --black: #1c1c1c;
 
-  /*radius*/
-  --main-radius: 0.3rem;
-  --second-radius: 0.6rem;
+  /*Fonts*/
+  --work-sans: "Work Sans";
+  --hind: "Hind";
 }
 
 html {
@@ -46,39 +48,4 @@ button {
   border: none;
   cursor: pointer;
   background: none;
-}
-
-.button {
-  display: inline-flex;
-  position: relative;
-  padding: 10px 30px;
-  background-color: trasnparent;
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: var(--dark-blue);
-  border: 0.2rem solid var(--dark-blue);
-  border-radius: 50rem;
-  transition: all 0.5s ease-in-out;
-}
-
-.button-dark {
-  display: inline-flex;
-  position: relative;
-  padding: 10px 30px;
-  background-color: trasnparent;
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: var(--black-panther);
-  background-color: var(--dark-blue);
-  border: 0.2rem solid var(--dark-blue);
-  border-radius: 50rem;
-  transition: all 0.5s ease-in-out;
-}
-
-.button-dark:hover,
-.button:hover {
-  color: var(--black-panther);
-  background-color: var(--light-blue);
 }

@@ -23,7 +23,7 @@ const Navbar = () => {
           />
           <h1 className={styles.navbarLogoText}>
             {logo.logoText}
-            <span>Programador Freelancer</span>
+            {/* <span>Programador Freelancer</span> */}
           </h1>
         </div>
         <ul className={styles.navList}>
