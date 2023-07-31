@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar'
 import { constantsData } from "@/data/constantsData";
 import styles from "@/styles/HomePage.module.css";
 import PerfilImage from '@/components/PerfilImage';
+import MainButton from '@/components/MainButton';
 
 export default function Home() {
   const { personalInfo } = constantsData;
@@ -21,6 +22,19 @@ export default function Home() {
           <PerfilImage
             imageURL={personalInfo.imagePerfil}
             imageAltText={personalInfo.imagePerfilAltText}
+          />
+          <div className={styles.introTexts}>
+            <h1 className={styles.introTitleText}>
+              {personalInfo.job} - {personalInfo.name}
+            </h1>
+            <p className={styles.introDescriptionText}>
+              Especializado no desenvolvimento de websites
+              <br></br>completos, modernos e personalizados
+            </p>
+          </div>
+          <MainButton
+            mainButtonText="Solicite um Orçamento"
+            mainButtonURL="#contactSection"
           />
         </section>
       </main>

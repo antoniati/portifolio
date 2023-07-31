@@ -5,3 +5,35 @@
     flex-direction: column;
     align-items: center;
 }
+
+.introSection {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 20px;
+}
+
+.introTexts {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+
+.introTitleText {
+    font: 600 26px var(--work-sans);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--black);
+}
+
+.introDescriptionText {
+    font: 400 22px var(--hind);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
