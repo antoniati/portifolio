@@ -1,0 +1,125 @@
+.card {
+    width: 90%;
+    position: relative;
+    min-width: 380px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+        inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+        5px 5px 5px rgba(0, 0, 0, 0.05),
+        -5px -5px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+}
+
+.box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: #FBFBFB;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+}
+
+.content i {
+    position: absolute;
+    top: 7%;
+    right: 130px;
+    font-size: 4.5em;
+    color: rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.card:hover i {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font: 600 20px var(--work-sans);
+    text-transform: uppercase;
+    color: #777;
+    z-index: 1;
+    margin-top: 5rem;
+}
+
+.card p {
+    font: 400 18px var(--hind);
+    font-weight: 300;
+    color: #777;
+    z-index: 1;
+    margin-top: 10px;
+}
+
+.card a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background-color: var(--light-blue);
+    margin-top: 15px;
+    border-radius: 30px;
+    color: var(--white);
+    font: 600 16px var(--work-sans);
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+.card:hover a {
+    background-color: var(--white);
+    color: var(--dark-blue);
+}
+
+.card a:hover {
+    letter-spacing: 1px;
+}
+
+.card:hover .box {
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+    background: linear-gradient(45deg, var(--dark-blue), var(--light-blue));
+}
+
+.card:hover h3,
+.card:hover p {
+    color: var(--white);
+}
+
+
+
+@media screen and (max-width: 670px) {
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+
+    .content i {
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        width: 50% !important;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+}

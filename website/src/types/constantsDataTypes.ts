@@ -15,6 +15,8 @@ export interface ConstantsDataProps {
         URLToPortifolioPage: string;
         URLToServicesPage: string;
         URLToContactPage: string;
+        URLToEntreMaresWebsiteDetails: string;
+        URLToConnectHouseWebsiteDetails: string;
     },
     navItemTexts: {
         home: string;
@@ -22,5 +24,15 @@ export interface ConstantsDataProps {
         portifolio: string;
         services: string;
         contact: string;
+    },
+    homePage: {
+        introSection: {
+            description: string;
+            buttonText: string;
+        },
+        recentsProjectsSection: {
+            title: string;
+            titleOverlay: string;
+        }
     }
 }

@@ -1,0 +1,60 @@
+.headerTexts {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.headerTextOverlay {
+    font: 600 100px var(--hind);
+    position: absolute;
+    text-transform: uppercase;
+    color: #33333309;
+    transition: 0.5s;
+}
+
+.headerTitleText {
+    font: 600 40px var(--work-sans);
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: 15px;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1020px){
+    .headerTextOverlay {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .headerTextOverlay {
+        font-size: 60px;
+    }
+    .headerTitleText {
+        font-size: 36px;
+    }
+}
+@media screen and (max-width: 670px) {
+    .headerTextOverlay {
+        font-size: 50px;
+    }
+
+    .headerTitleText {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 520px) { 
+    .headerTextOverlay {
+        font-size: 30px;
+    }
+
+    .headerTitleText {
+        font-size: 20px;
+        margin: 0;
+    }
+}

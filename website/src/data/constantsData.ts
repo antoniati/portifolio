@@ -16,7 +16,9 @@ export const constantsData: ConstantsDataProps = {
         "URLToAboutPage": "https://felipeantoniati.vercel.app//sobre",
         "URLToPortifolioPage": "https://felipeantoniati.vercel.app/portifolio",
         "URLToServicesPage": "https://felipeantoniati.vercel.app/servicos",
-        "URLToContactPage": "https://felipeantoniati.vercel.app/contato"
+        "URLToContactPage": "https://felipeantoniati.vercel.app/contato",
+        "URLToEntreMaresWebsiteDetails": "https://felipeantoniati.vercel.app/portifolio/entremares",
+        "URLToConnectHouseWebsiteDetails": "https://felipeantoniati.vercel.app/portifolio/connecthouse"
     },
     "navItemTexts": {
         "home": "Inicio",
@@ -24,5 +26,15 @@ export const constantsData: ConstantsDataProps = {
         "portifolio": "Portifolio",
         "services": "Serviços",
         "contact": "Contato"
+    },
+    "homePage": {
+        "introSection": {
+            "description": "Especializado no desenvolvimento de websites completos, modernos e personalizados",
+            "buttonText":"Solicite um orçamento"
+        },
+        "recentsProjectsSection": {
+            "title":"Projetos Recentes",
+            "titleOverlay":"Projectos Recentes"
+        }
     }
 }

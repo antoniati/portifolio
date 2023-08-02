@@ -1,39 +1,117 @@
-#main {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+/* Estilos Gerais da Home Page */
 
-.introSection {
-    width: 90%;
-    max-width: 1200px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 100px;
+/* Sessão de Introdução */
+#introSection {
+    height: 768px;
+    padding: 100px 0;
     gap: 20px;
 }
 
 .introTexts {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px;
     text-align: center;
 }
 
 .introTitleText {
     font: 600 26px var(--work-sans);
     text-transform: uppercase;
-    letter-spacing: 1px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid var(--black);
+    letter-spacing: 2px;
+    transition: 0.5s;
+    display: flex;
+    gap: 10px;
 }
 
 .introDescriptionText {
-    font: 400 22px var(--hind);
+    width: 100%;
+    max-width: 700px;
+    font: 400 20px var(--hind);
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-top: 20px;
+}
+
+/* Sessão de Projetos Recentes */
+.recentsProjects {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.recentsProjectsCards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 0;
+}
+
+.sectionServices {
+    width: 100%;
+}
+
+.recentProjectButtons {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+}
+
+#sectionServices {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerCards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    gap: 20px;
+}
+
+
+@media screen and (max-width: 900px) {
+    #introSection {
+        align-items: center;
+        margin: 0;
+        padding: 100px 0 0 0;
+    }
+
+    .introTitleText {
+        width: 70%;
+        line-height: 40px;
+    }
+
+    .introTitleText span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    #introSection {
+        width: 100%;
+    }
+
+    .introTexts {
+        width: 100%;
+    }
+
+    .introTitleText {
+        width: 90%;
+        letter-spacing: 1px;
+        line-height: 30px;
+        font-size: 18px;
+    }
+
+    .introDescriptionText {
+        width: 90%;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
 }
