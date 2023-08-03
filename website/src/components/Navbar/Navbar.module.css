@@ -84,14 +84,8 @@
     width: 100%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
     .navList {
         display: none;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .navbarLogoText {
-        display: none
     }
 }

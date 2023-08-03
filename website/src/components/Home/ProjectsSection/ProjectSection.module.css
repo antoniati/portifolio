@@ -1,0 +1,23 @@
+#recentsProjects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white-ghost);
+    padding: 80px 0;
+}
+
+.recentsProjectsCards {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    max-width: 1200px;
+}
+
+@media screen and (max-width: 600px) {
+    .recentsProjectsCards {
+        width: 100%;
+    }
+}

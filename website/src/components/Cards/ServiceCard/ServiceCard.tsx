@@ -1,5 +1,6 @@
 import { IconBaseProps } from "react-icons";
-import styles from "@/styles/ServiceCard.module.css";
+import styles from "./ServiceCard.module.css";
+import SecondaryButton from "@/components/Buttons/SecondaryButton/SecondaryButton";
 
 interface ServiceCardProps {
     cardTitleText: string;
@@ -16,12 +17,15 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         <div className={styles.card}>
             <div className={styles.box}>
                 <div className={styles.content}>
-                    <i><CardInfoIcon/></i>
-                    <h3>{cardTitleText}</h3>
-                    <p> {cardDescriptionText} </p>
-                    <a className={styles.button} href="#">
-                        Saiba Mais
-                    </a>
+                    <i><CardInfoIcon /></i>
+                    <div className={styles.cardTexts}>
+                        <h3>{cardTitleText}</h3>
+                        <p> {cardDescriptionText} </p>
+                    </div>
+                    <SecondaryButton
+                        secondaryButtonText="Ver Detalhes"
+                        secondaryButtonURL="#"
+                    />
                 </div>
             </div>
         </div>

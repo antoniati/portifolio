@@ -5,6 +5,7 @@
     background: var(--white);
     border-radius: 50%;
     overflow: hidden;
+    transition: 0.5s;
 }
 
 #boxImage::before {
@@ -55,4 +56,17 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media screen and (max-width: 992px){
+    #boxImage {
+        width: 225px;
+        height: 225px;
+    }
+}
+@media screen and (max-width: 600px) {
+    #boxImage {
+        width: 200px;
+        height: 200px;
+    }
 }

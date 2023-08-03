@@ -1,4 +1,4 @@
-import styles from "@/styles/MainButton.module.css";
+import styles from "./MainButton.module.css";
 
 interface MainButtonProps {
     mainButtonText: string;

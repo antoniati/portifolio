@@ -1,31 +1,39 @@
-#mainButton {
+#secondaryButton {
     font: 600 16px var(--hind);
     text-transform: uppercase;
-    color: var(--white);
+    color: var(--dark-blue);
     display: block;
     text-align: center;
     line-height: 60px;
-    width: 300px;
+    width: 200px;
     height: 60px;
     padding: 0 20px;
     box-sizing: border-box;
     z-index: 1;
     transition: all 0.5s ease-in-out;
-    background: 
-        linear-gradient(
-            to right, 
-            var(--dark-blue) 0%, 
-            var(--dark-blue) 20%, 
-            var(--light-blue) 20%, 
-            var(--light-blue) 100%
-        );
+    background:
+        linear-gradient(to right,
+            #f8f8f8 0%,
+            #f8f8f8 20%,
+            var(--white) 20%,
+            var(--white) 100%);
     background-size: 1500px;
     background-position: 100% 0;
     border: 2px solid var(--dark-blue);
     border-radius: 50rem;
+    transition: 0.5s;
+    letter-spacing: 1px;
+
 }
 
-#mainButton:hover {
-    letter-spacing: 1px;
+#secondaryButton:hover {
+    letter-spacing: 2px;
     background-position: 0 0;
+}
+
+
+@media screen and (max-width: 600px) {
+    #mainButton {
+        width: 275px;
+    }
 }

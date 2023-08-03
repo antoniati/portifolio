@@ -1,4 +1,4 @@
-import styles from "@/styles/PerfilImage.module.css";
+import styles from "./PerfilImage.module.css";
 
 interface PerfilImageProps {
     imageURL: string;

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@/styles/ToggleMenu.module.css';
+import styles from './ToggleMenu.module.css';
 
 interface ToggleMenuProps {
   isOpen: boolean;

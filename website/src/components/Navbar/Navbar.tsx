@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import ToggleMenu from '@/components/ToggleMenu';
-import DropdownMenu from '@/components/DropDownMenu';
+import ToggleMenu from '@/components/Navbar/ToggleMenu/ToggleMenu';
+import DropdownMenu from '@/components/Navbar/DropdownMenu/DropDownMenu';
 import { constantsData } from '@/data/constantsData';
-import styles from '@/styles/Navbar.module.css';
+import styles from './Navbar.module.css';
 
 const Navbar = () => {
   const { logo, pageLinks, navItemTexts, personalInfo } = constantsData;

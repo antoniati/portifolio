@@ -9,7 +9,7 @@
 }
 
 .headerTextOverlay {
-    font: 600 100px var(--hind);
+    font: 600 60px var(--hind);
     position: absolute;
     text-transform: uppercase;
     color: #33333309;
@@ -17,44 +17,40 @@
 }
 
 .headerTitleText {
-    font: 600 40px var(--work-sans);
+    font: 600 32px var(--work-sans);
     text-transform: uppercase;
-    color: var(--black);
-    margin-bottom: 15px;
+    letter-spacing: 2px;
+    line-height: 50px;
     transition: 0.5s;
+    color: var(--dark-blue);
 }
 
-@media screen and (max-width: 1020px){
-    .headerTextOverlay {
-        font-size: 80px;
-    }
-}
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
     .headerTextOverlay {
         font-size: 60px;
     }
+
     .headerTitleText {
         font-size: 36px;
     }
 }
-@media screen and (max-width: 670px) {
-    .headerTextOverlay {
-        font-size: 50px;
-    }
 
-    .headerTitleText {
-        font-size: 30px;
-    }
+@media screen and (max-width: 768px) {
+.headerTitleText {
+    font-size: 26px;
+}
+.headerTextOverlay {
+    font-size: 50px;
+}
 }
 
-@media screen and (max-width: 520px) { 
-    .headerTextOverlay {
-        font-size: 30px;
-    }
-
+@media screen and (max-width: 600px) {
     .headerTitleText {
+        letter-spacing: normal;
         font-size: 20px;
-        margin: 0;
+    }
+    .headerTextOverlay {
+        letter-spacing: normal;
+        font-size: 28px;
     }
 }

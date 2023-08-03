@@ -29,12 +29,27 @@ export const constantsData: ConstantsDataProps = {
     },
     "homePage": {
         "introSection": {
-            "description": "Especializado no desenvolvimento de websites completos, modernos e personalizados",
-            "buttonText":"Solicite um orçamento"
+            "description": "Especializado no Desenvolvimento de Websites Completos, Modernos e Personalizados",
+            "buttonText": "Solicite um orçamento"
+        },
+        "servicesSection": {
+            "title": "Serviços & Soluções",
+            "cardWebDeveloper": {
+                "title": "Desenvolvimento Web",
+                "description": "Criação de Websites multiplataformas, responsivos e personalizados, utilizando as mais recentes tecnologias e boas práticas de desenvolvimento"
+            },
+            "cardSEO": {
+                "title": "Marketing e SEO",
+                "description": "Otimização de sites e estratégias de marketing para melhorar sua visibilidade nos motores de busca e obter os rankings mais altos nas páginas de resultados"
+            },
+            "cardSupport": {
+                "title": "Suporte e Manutenção",
+                "description": "Ofereço serviços de suporte técnico e manutenção contínua para garantir que seu site esteja sempre funcionando corretamente e sempre atualizado"
+            }
         },
         "recentsProjectsSection": {
-            "title":"Projetos Recentes",
-            "titleOverlay":"Projectos Recentes"
+            "title": "Projetos Recentes",
+            "titleOverlay": "Projectos Recentes"
         }
     }
 }

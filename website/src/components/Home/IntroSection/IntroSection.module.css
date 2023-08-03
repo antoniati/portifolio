@@ -1,0 +1,81 @@
+#introSection {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 50px 0;
+    gap: 20px;
+}
+
+.introTexts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+}
+
+.introTitleText {
+    width: 100%;
+    font: 600 30px var(--work-sans);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 50px;
+    transition: 0.5s;
+    color: var(--dark-blue);
+}
+
+.introDescriptionText {
+    width: 90%;
+    max-width: 800px;
+    font: 400 30px var(--work-sans);
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+
+/* @media screen and (max-width: 992px) {
+
+
+    .introTitleText {
+        line-height: 40px;
+    }
+
+    .introDescriptionText,
+    .introTitleText {
+        font-size: 24px;
+    }
+} */
+
+@media screen and (max-width: 768px) {
+    #introSection {
+        height: auto;
+        padding: 100px 0 50px 0;
+    }
+
+    .introTitleText {
+        font-size: 22px;
+        display: flex;
+        flex-direction: column;
+        line-height: 30px;
+    }
+
+    .introDescriptionText {
+        width: 80%;
+        font-size: 22px;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .introTitleText {
+        letter-spacing: normal;
+        font-size: 18px;
+    }
+
+    .introDescriptionText {
+        width: 100%;
+        font-size: 18px;
+    }
+}
