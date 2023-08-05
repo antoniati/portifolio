@@ -1,81 +1,62 @@
 #introSection {
-    width: 90%;
-    max-width: 1200px;
+    width: 100%;
+    padding: 100px 0 50px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 0 50px 0;
+    background-color: var(--white-ghost);
     gap: 20px;
 }
 
 .introTexts {
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
     text-align: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .introTitleText {
-    width: 100%;
     font: 600 30px var(--work-sans);
     text-transform: uppercase;
     letter-spacing: 2px;
-    line-height: 50px;
+    line-height: 40px;
     transition: 0.5s;
     color: var(--dark-blue);
 }
 
 .introDescriptionText {
-    width: 90%;
-    max-width: 800px;
-    font: 400 30px var(--work-sans);
-    letter-spacing: 1px;
-    margin-bottom: 1rem;
+    font: 300 26px var(--hind);
+    letter-spacing: 2px;
 }
 
-
-/* @media screen and (max-width: 992px) {
-
-
-    .introTitleText {
-        line-height: 40px;
-    }
-
-    .introDescriptionText,
-    .introTitleText {
-        font-size: 24px;
-    }
-} */
-
 @media screen and (max-width: 768px) {
-    #introSection {
-        height: auto;
-        padding: 100px 0 50px 0;
+    .introTexts {
+        gap: 5px;
     }
 
     .introTitleText {
-        font-size: 22px;
         display: flex;
         flex-direction: column;
-        line-height: 30px;
+        font-size: 24px;
     }
 
     .introDescriptionText {
-        width: 80%;
-        font-size: 22px;
-        margin: 5px;
+        font-size: 24px;
+        margin-bottom: 10px;
     }
 }
 
 @media screen and (max-width: 600px) {
     .introTitleText {
-        letter-spacing: normal;
-        font-size: 18px;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 1px;
     }
 
     .introDescriptionText {
-        width: 100%;
-        font-size: 18px;
+        font-size: 20px;
     }
 }

@@ -1,7 +1,11 @@
 import { useState } from 'react';
-import ToggleMenu from '@/components/Navbar/ToggleMenu/ToggleMenu';
+import { BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs"
+
 import DropdownMenu from '@/components/Navbar/DropdownMenu/DropDownMenu';
+import ToggleMenu from '@/components/Navbar/ToggleMenu/ToggleMenu';
+
 import { constantsData } from '@/data/constantsData';
+
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
@@ -23,7 +27,7 @@ const Navbar = () => {
           />
           <h1 className={styles.navbarLogoText}>
             {personalInfo.name}
-            {/* <span>Programador Freelancer</span> */}
+            <span>Programador Freelancer</span>
           </h1>
         </div>
         <ul className={styles.navList}>

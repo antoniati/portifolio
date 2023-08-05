@@ -24,30 +24,5 @@ export interface ConstantsDataProps {
         portifolio: string;
         services: string;
         contact: string;
-    },
-    homePage: {
-        introSection: {
-            description: string;
-            buttonText: string;
-        },
-        servicesSection: {
-            title: string;
-            cardWebDeveloper: {
-                title: string;
-                description: string;
-            },
-            cardSEO: {
-                title: string;
-                description: string;
-            },
-            cardSupport: {
-                title: string;
-                description: string;
-            }
-        },
-        recentsProjectsSection: {
-            title: string;
-            titleOverlay: string;
-        }
     }
 }

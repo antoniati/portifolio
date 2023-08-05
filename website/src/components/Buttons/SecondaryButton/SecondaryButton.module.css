@@ -13,15 +13,16 @@
     transition: all 0.5s ease-in-out;
     background:
         linear-gradient(to right,
-            #f8f8f8 0%,
-            #f8f8f8 20%,
+            var(--dark-blue) 0%,
+            var(--dark-blue) 20%,
             var(--white) 20%,
             var(--white) 100%);
     background-size: 1500px;
     background-position: 100% 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     border: 2px solid var(--dark-blue);
     border-radius: 50rem;
-    transition: 0.5s;
+    transition: 0.5s ease-out;
     letter-spacing: 1px;
 
 }
@@ -29,6 +30,7 @@
 #secondaryButton:hover {
     letter-spacing: 2px;
     background-position: 0 0;
+    color: var(--white);
 }
 
 

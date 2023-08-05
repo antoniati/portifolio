@@ -1,0 +1,54 @@
+#contact {
+    padding: 100px 0;
+    width: 98%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactContent {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.contactOptions {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contactItem h3 {
+    width: 90%;
+    text-align: center;
+    font: 600 18px var(--hind);
+    padding: 10px;
+    border-bottom: 1px solid var(--dark-gray);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .contactContent {
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactOptions {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}

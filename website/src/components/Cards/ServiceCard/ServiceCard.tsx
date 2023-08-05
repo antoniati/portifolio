@@ -1,6 +1,7 @@
+import NeumorphismContainer from "@/components/NeumorphismContainer/NeumorphismContainer";
+import SecondaryButton from "@/components/Buttons/SecondaryButton/SecondaryButton";
 import { IconBaseProps } from "react-icons";
 import styles from "./ServiceCard.module.css";
-import SecondaryButton from "@/components/Buttons/SecondaryButton/SecondaryButton";
 
 interface ServiceCardProps {
     cardTitleText: string;
@@ -14,21 +15,19 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     cardDescriptionText
 }) => {
     return (
-        <div className={styles.card}>
-            <div className={styles.box}>
-                <div className={styles.content}>
-                    <i><CardInfoIcon /></i>
-                    <div className={styles.cardTexts}>
-                        <h3>{cardTitleText}</h3>
-                        <p> {cardDescriptionText} </p>
-                    </div>
-                    <SecondaryButton
-                        secondaryButtonText="Ver Detalhes"
-                        secondaryButtonURL="#"
-                    />
+        <NeumorphismContainer>
+            <div className={styles.content}>
+                <i><CardInfoIcon /></i>
+                <div className={styles.cardTexts}>
+                    <h3>{cardTitleText}</h3>
+                    <p> {cardDescriptionText} </p>
                 </div>
+                <SecondaryButton
+                    secondaryButtonText="Ver Detalhes"
+                    secondaryButtonURL="#"
+                />
             </div>
-        </div>
+        </NeumorphismContainer>
     );
 };
 

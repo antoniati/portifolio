@@ -1,0 +1,48 @@
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icons a {
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    line-height: 30%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.linkedin {
+    color: var(--white);
+    background-color: #0a66c2b9;
+    border: 3px solid #0a66c2;
+    transition: 0.5s;
+}
+.linkedin:hover {
+    background-color: #0a66c2;
+}
+
+.instagram {
+    color: var(--white);
+    background-color: #ff3041ae;
+    border: 3px solid #ff3040;
+    transition: 0.5s;
+}
+.instagram:hover {
+    background-color: #ff3040;
+}
+
+.github {
+    color: var(--white);
+    background-color: #7a828ec6;
+    border: 3px solid #7a828e;
+    transition: 0.5s;
+}
+.github:hover {
+    background-color: #7a828e;
+}

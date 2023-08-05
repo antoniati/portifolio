@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;600&family=Open+Sans:ital@1&family=Work+Sans:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;600&family=Open+Sans:ital@1&family=Work+Sans:wght@300;600&display=swap');
 
 :root {
   /*colors*/
-  --white: #FBFBFB;
-  --white-ghost: #ffffff;
+  --black: #1c1c1c;
+  --white: #FFF;
+  --white-ghost: #FBFBFB;
   --dark-blue: #4158B1;
   --light-blue: #5371e8;
-  --black: #1c1c1c;
+  --gray: #ECECEC;
+  --dark-gray: #777;
 
   /*Fonts*/
   --work-sans: "Work Sans";
@@ -48,4 +50,28 @@ button {
   border: none;
   cursor: pointer;
   background: none;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  font: 600 16px var(--hind);
+  letter-spacing: 1px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #d5d5d5;
+  outline: 0;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  color: var(--dark-blue);
+  border: 2px solid var(--dark-blue);
+}
+
+textarea {
+  resize: none;
+  height: 120px;
 }

@@ -1,0 +1,10 @@
+#contactItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactItemLabel {
+    font: 600 14px var(--hind);
+    color: var(--black);
+    margin-bottom: 5px;
+}

@@ -1,25 +1,23 @@
 #servicesSection {
-    width: 100%;
-    height: auto;
+    padding: 100px 0 50px 0;
+    width: 95%;
+    max-width: 1250px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
-    background-color: var(--white-ghost);
-    padding: 50px;
 }
 
 .containerCards {
-    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
     #servicesSection {
-        padding: 0;
+        padding: 40px 0;
+    }
+
+    .containerCards {
+        flex-wrap: wrap;
     }
 }

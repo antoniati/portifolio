@@ -1,6 +1,7 @@
+import NeumorphismContainer from "@/components/NeumorphismContainer/NeumorphismContainer";
+import SecondaryButton from "@/components/Buttons/SecondaryButton/SecondaryButton";
 import { FcCalendar, FcClock } from "react-icons/fc";
 import styles from "./ProjectCard.module.css";
-import SecondaryButton from "@/components/Buttons/SecondaryButton/SecondaryButton";
 
 interface ProjectCardProps {
     cardTitleText: string;
@@ -22,12 +23,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
 }) => {
     return (
-        <div className={styles.card}>
-            <div className={styles.box}>
-                <div className={styles.imageContainer}>
-                    <img src={cardImageURL} alt={cardImageAltText} />
-                </div>
-                <div className={styles.content}>
+        <NeumorphismContainer>
+            <div className={styles.card}>
+                <img src={cardImageURL} alt={cardImageAltText} />
+                <div className={styles.cardContent  }>
                     <div className={styles.cardTexts}>
                         <h3>{cardTitleText}</h3>
                         <p className={styles.cardDescription}> {cardDescriptionText} </p>
@@ -35,11 +34,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     <div className={styles.cardDetails}>
                         <div className={styles.cardDetailsItem}>
                             <i><FcCalendar /></i>
-                            <p className={styles.cardDetailsDescription}><strong>Data</strong>: {cardDetailsData}</p>
+                            <p className={styles.cardDetailsDescription}>
+                                <strong>Data</strong>: {cardDetailsData}
+                            </p>
                         </div>
                         <div className={styles.cardDetailsItem}>
                             <i><FcClock /></i>
-                            <p className={styles.cardDetailsDescription}><strong>Duração</strong>: {cardDetailsDuration}</p>
+                            <p className={styles.cardDetailsDescription}>
+                                <strong>Duração</strong>: {cardDetailsDuration}
+                            </p>
                         </div>
                     </div>
                     <SecondaryButton
@@ -48,7 +51,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     />
                 </div>
             </div>
-        </div>
+        </NeumorphismContainer >
     );
 };
 

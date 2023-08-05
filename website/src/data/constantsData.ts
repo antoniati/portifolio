@@ -1,4 +1,4 @@
-import { ConstantsDataProps } from "@/types/constantsDataTypes";
+import { ConstantsDataProps } from "@/types/constantsDataTypings";
 
 export const constantsData: ConstantsDataProps = {
     "personalInfo": {
@@ -26,30 +26,5 @@ export const constantsData: ConstantsDataProps = {
         "portifolio": "Portifolio",
         "services": "Serviços",
         "contact": "Contato"
-    },
-    "homePage": {
-        "introSection": {
-            "description": "Especializado no Desenvolvimento de Websites Completos, Modernos e Personalizados",
-            "buttonText": "Solicite um orçamento"
-        },
-        "servicesSection": {
-            "title": "Serviços & Soluções",
-            "cardWebDeveloper": {
-                "title": "Desenvolvimento Web",
-                "description": "Criação de Websites multiplataformas, responsivos e personalizados, utilizando as mais recentes tecnologias e boas práticas de desenvolvimento"
-            },
-            "cardSEO": {
-                "title": "Marketing e SEO",
-                "description": "Otimização de sites e estratégias de marketing para melhorar sua visibilidade nos motores de busca e obter os rankings mais altos nas páginas de resultados"
-            },
-            "cardSupport": {
-                "title": "Suporte e Manutenção",
-                "description": "Ofereço serviços de suporte técnico e manutenção contínua para garantir que seu site esteja sempre funcionando corretamente e sempre atualizado"
-            }
-        },
-        "recentsProjectsSection": {
-            "title": "Projetos Recentes",
-            "titleOverlay": "Projectos Recentes"
-        }
     }
 }

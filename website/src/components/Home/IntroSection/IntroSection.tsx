@@ -1,28 +1,31 @@
 import PerfilImage from "@/components/PerfilImage/PerfilImage";
 import MainButton from "@/components/Buttons/MainButton/MainButton";
+import SocialMedias from "@/components/SocialMedias/SocialMedias";
 import { constantsData } from "@/data/constantsData";
+import { presentationSection } from "@/data/homePageData";
 import styles from "./IntroSection.module.css";
 
-const IntroSection: React.FC = () => {
-    const { personalInfo, homePage } = constantsData;
+const IntroSection = () => {
+
     return (
         <section id={styles.introSection}>
             <PerfilImage
-                imageURL={personalInfo.imagePerfil}
-                imageAltText={personalInfo.imagePerfilAltText}
+                imageURL={constantsData.personalInfo.imagePerfil}
+                imageAltText={constantsData.personalInfo.imagePerfilAltText}
             />
             <div className={styles.introTexts}>
                 <h1 className={styles.introTitleText}>
-                    <span>{personalInfo.job}</span> {personalInfo.name}
+                    <span>{constantsData.personalInfo.job}</span> {constantsData.personalInfo.name}
                 </h1>
                 <p className={styles.introDescriptionText}>
-                    {homePage.introSection.description}
+                    {presentationSection.subtitle}
                 </p>
+                <MainButton
+                    mainButtonText={presentationSection.buttonText}
+                    mainButtonURL={presentationSection.buttonURL}
+                />
             </div>
-            <MainButton
-                mainButtonText={homePage.introSection.buttonText}
-                mainButtonURL="#contactSection"
-            />
+            <SocialMedias />
         </section>
     );
 };
