@@ -1,87 +1,93 @@
+/* Estilos para a seção de texto do cabeçalho */
 .headerTexts {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100px;
-    margin-top: 10px;
+    width: 100%; /* Largura total */
+    height: auto; /* Altura automática */
+    display: flex; /* Exibe os elementos em uma coluna */
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center; /* Alinha os elementos no centro horizontalmente */
+    height: 100px; /* Altura fixa */
+    margin-top: 10px; /* Espaçamento superior */
 }
 
+/* Estilos para o título principal do cabeçalho */
 .headerTitle {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    margin-bottom: 5px;
+    width: 100%; /* Largura total */
+    display: flex; /* Exibe os elementos em uma coluna */
+    align-items: center; /* Alinha os elementos no centro horizontalmente */
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    justify-content: center; /* Centraliza verticalmente os elementos */
+    position: relative; /* Posição relativa para elementos filhos */
+    margin-bottom: 5px; /* Espaçamento inferior */
 }
 
+/* Estilos para o overlay de texto no título principal */
 .headerTextOverlay {
-    font: 600 60px var(--work-sans);
-    position: absolute;
-    text-transform: uppercase;
-    color: #33333309;
-    transition: 0.5s;
+    font: 600 60px var(--work-sans); /* Estilo da fonte */
+    position: absolute; /* Posição absoluta no elemento pai */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    color: #33333309; /* Cor do texto com transparência */
+    transition: 0.5s; /* Transição suave em animações */
 }
 
+/* Estilos para o texto do título principal */
 .headerTitleText {
-    font: 600 32px var(--work-sans);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.5s;
-    color: var(--dark-blue);
+    font: 600 32px var(--work-sans); /* Estilo da fonte */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    letter-spacing: 2px; /* Espaçamento entre caracteres */
+    transition: 0.5s; /* Transição suave em animações */
+    color: var(--dark-blue); /* Cor do texto */
 }
 
+/* Estilos para o parágrafo de texto */
 .headerTexts p {
-    width: 100%;
-    max-width: 900px;
-    font: 300 26px var(--hind);
-    letter-spacing: 2px;
-    text-align: center;
+    width: 100%; /* Largura total */
+    max-width: 900px; /* Largura máxima do parágrafo */
+    font: 300 26px var(--hind); /* Estilo da fonte */
+    letter-spacing: 2px; /* Espaçamento entre caracteres */
+    text-align: center; /* Alinhamento do texto */
 }
 
+/* Estilos para telas de largura máxima de 992px */
 @media screen and (max-width: 992px) {
     .headerTextOverlay {
-        font-size: 60px;
+        font-size: 60px; /* Tamanho maior do overlay de texto */
     }
 
-
     .headerTitleText {
-        font-size: 36px;
+        font-size: 36px; /* Tamanho maior do texto do título */
     }
 }
 
+/* Estilos para telas de largura máxima de 768px */
 @media screen and (max-width: 768px) {
     .headerTexts p {
-        width: 90%;
-        font-size: 22px;
+        width: 90%; /* Reduz a largura do parágrafo */
+        font-size: 22px; /* Tamanho menor do texto do parágrafo */
     }
 
     .headerTitleText {
-        font-size: 26px;
+        font-size: 26px; /* Tamanho menor do texto do título */
     }
 
     .headerTextOverlay {
-        font-size: 50px;
+        font-size: 50px; /* Tamanho menor do overlay de texto */
     }
 }
 
+/* Estilos para telas de largura máxima de 600px */
 @media screen and (max-width: 600px) {
     .headerTexts p,
     .headerTitleText {
-        letter-spacing: normal;
-        font-size: 20px;
+        letter-spacing: normal; /* Remove espaçamento entre caracteres */
+        font-size: 20px; /* Tamanho menor do texto */
     }
 
     .headerTextOverlay {
-        letter-spacing: normal;
-        font-size: 28px;
+        letter-spacing: normal; /* Remove espaçamento entre caracteres */
+        font-size: 28px; /* Tamanho menor do overlay de texto */
     }
 
     .headerTexts {
-        margin: 1rem auto;
-
+        margin: 1rem auto; /* Margem automática no topo e inferior */
     }
 }

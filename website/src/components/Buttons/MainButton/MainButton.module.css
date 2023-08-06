@@ -1,38 +1,52 @@
+/**
+ * Estilos para o componente MainButton.
+ */
+
+/* Estilos gerais do Botão Principal */
 #mainButton {
-    font: 600 16px var(--hind);
-    text-transform: uppercase;
-    color: var(--white);
-    display: block;
-    text-align: center;
-    line-height: 60px;
-    width: 300px;
-    height: 60px;
-    padding: 0 20px;
-    box-sizing: border-box;
-    z-index: 1;
-    transition: all 0.5s ease-in-out;
-    background:
-        linear-gradient(to right,
+    width: 300px; /* Largura do botão */
+    height: 60px; /* Altura do botão */
+    padding: 0 20px; /* Espaçamento interno (horizontal) */
+
+    font: 600 16px var(--hind); /* Estilo da fonte */
+    line-height: 60px; /* Altura da linha de texto */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    text-align: center; /* Alinhamento do texto */
+    letter-spacing: 1px; /* Espaçamento entre caracteres */
+    color: var(--white); /* Cor do texto */
+
+    display: block; /* Exibe o botão como bloco */
+    box-sizing: border-box; /* Model box para incluir padding e borda */
+    z-index: 1; /* Camada de posicionamento */
+
+    background: linear-gradient(to right,
             var(--dark-blue) 0%,
             var(--dark-blue) 20%,
             var(--light-blue) 20%,
-            var(--light-blue) 100%);
-    background-size: 1500px;
-    background-position: 100% 0;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    border: 2px solid var(--dark-blue);
-    border-radius: 50rem;
-    transition: 0.5s;
+            var(--light-blue) 100%); /* Gradiente de cores de fundo */
+    background-size: 1500px; /* Tamanho do gradiente */
+    background-position: 100% 0; /* Posição do gradiente */
+
+    border-radius: 50rem; /* Raio do canto arredondado */
+    border: 2px solid var(--dark-blue); /* Borda do botão */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra do botão */
+
+    transition: all 0.5s ease-in-out; /* Transição suave em animações */
 }
 
+/**
+ * Estilos aplicados ao passar o mouse sobre o Botão Principal.
+ */
 #mainButton:hover {
-    letter-spacing: 1px;
-    background-position: 0 0;
+    letter-spacing: 2px; /* Altera o espaçamento entre caracteres */
+    background-position: 0 0; /* Altera a posição do gradiente ao passar o mouse */
 }
 
-
+/**
+ * Estilos específicos para telas pequenas (até 600px) para o Botão Principal.
+ */
 @media screen and (max-width: 600px) {
     #mainButton {
-        width: 240px;
+        width: 240px; /* Largura do botão em telas pequenas */
     }
 }

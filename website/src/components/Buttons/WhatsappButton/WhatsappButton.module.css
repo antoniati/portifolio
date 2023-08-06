@@ -1,48 +1,69 @@
+/**
+ * Estilos para o botão do WhatsApp.
+ */
 #whatsapp {
-    width: 300px;
-    height: 60px;
-    padding: 1rem;
+    width: 250px; /* Largura do botão */
+    height: 60px; /* Altura do botão */
+    padding: 0 20px; /* Espaçamento interno (horizontal) */
 
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    display: flex; /* Exibe os elementos como flex */
+    align-items: center; /* Centraliza verticalmente os elementos */
+    justify-content: flex-start; /* Alinha os elementos à esquerda */
 
-    color: var(--white);
-    background:
-        linear-gradient(to right,
-            #2ea844 0%,
-            #2ea844 20%,
-            #41de5d 20%,
-            #41de5d 100%);
-    background-size: 1500px;
-    background-position: 100% 0;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
-    border: 2px solid #2ea844;
-    cursor: pointer;
-    transition: 0.5s;
+    color: var(--white); /* Cor do texto */
+    background: linear-gradient(
+        to right,
+        #2ea844 0%,
+        #2ea844 20%,
+        #41de5d 20%,
+        #41de5d 100%
+    ); /* Gradiente de cores de fundo */
+    background-size: 1500px; /* Tamanho do gradiente */
+    background-position: 100% 0; /* Posição do gradiente */
+    border-radius: 30px; /* Raio do canto arredondado */
+    border: 2px solid #2ea844; /* Borda do botão */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra do botão */
+    transition: all 0.5s ease-in-out; /* Transição suave em animações */
 }
 
-#whatsapp:hover {
-    background-position: 0 0;
-}
-
+/**
+ * Estilos para o ícone do WhatsApp.
+ */
 #whatsapp i {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 36px;
+    width: 50%; /* Largura do ícone */
+    display: flex; /* Exibe o ícone como flex */
+    align-items: center; /* Centraliza verticalmente o ícone */
+    justify-content: center; /* Centraliza horizontalmente o ícone */
+    font-size: 36px; /* Tamanho do ícone */
 }
 
+/**
+ * Estilos para o texto "Whatsapp".
+ */
 #whatsapp span {
-    width: 100%;
-    font: 400 24px var(--hind);
-    letter-spacing: 2px;
+    width: 100%; /* Largura do texto */
+    font: 600 20px var(--hind); /* Estilo do texto */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    letter-spacing: 1px; /* Espaçamento entre caracteres */
+    transition: all 0.5s ease-in-out; /* Transição suave em animações */
 }
 
+/**
+ * Estilos aplicados ao passar o mouse sobre o botão do WhatsApp.
+ */
+ #whatsapp:hover {
+    background-position: 0 0; /* Altera a posição do gradiente ao passar o mouse */
+}
+
+#whatsapp:hover span {
+    letter-spacing: 2px; /* Altera o espaçamento entre caracteres */
+}
+
+/**
+ * Estilos específicos para telas pequenas (até 600px) para o botão do WhatsApp.
+ */
 @media screen and (max-width: 600px) {
     #whatsapp {
-        width: 250px;
+        width: 240px; /* Largura do botão em telas pequenas */
     }
 }

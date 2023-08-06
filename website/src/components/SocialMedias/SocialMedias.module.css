@@ -1,48 +1,57 @@
-
+/* Estilos para o contêiner de ícones sociais */
 .icons {
-    display: flex;
-    gap: 20px;
+    display: flex; /* Exibe os ícones em uma linha */
+    gap: 20px; /* Espaçamento entre os ícones */
 }
 
+/* Estilos para os links dos ícones */
 .icons a {
-    font-size: 26px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center ;
-    line-height: 30%;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-
+    font-size: 26px; /* Tamanho da fonte dos ícones */
+    width: 50px; /* Largura do ícone */
+    height: 50px; /* Altura do ícone */
+    border-radius: 50%; /* Formato de círculo para os ícones */
+    display: flex; /* Exibe como flexbox */
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: center ; /* Alinha horizontalmente no centro */
+    line-height: 30%; /* Altura da linha de texto (percentual para centralização vertical) */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave nos ícones */
 }
 
+/* Estilos específicos para o ícone do LinkedIn */
 .linkedin {
-    color: var(--white);
-    background-color: #0a66c2b9;
-    border: 3px solid #0a66c2;
-    transition: 0.5s;
+    color: var(--white); /* Cor do ícone */
+    background-color: #0a66c2b9; /* Cor de fundo ao padrão */
+    border: 3px solid #0a66c2; /* Borda */
+    transition: 0.5s; /* Transição suave */
 }
+
+/* Efeito ao passar o mouse sobre o ícone do LinkedIn */
 .linkedin:hover {
-    background-color: #0a66c2;
+    background-color: #0a66c2; /* Cor de fundo ao passar o mouse */
 }
 
+/* Estilos específicos para o ícone do Instagram */
 .instagram {
-    color: var(--white);
-    background-color: #ff3041ae;
-    border: 3px solid #ff3040;
-    transition: 0.5s;
-}
-.instagram:hover {
-    background-color: #ff3040;
+    color: var(--white); /* Cor do ícone */
+    background-color: #ff3041ae; /* Cor de fundo ao padrão */
+    border: 3px solid #ff3040; /* Borda */
+    transition: 0.5s; /* Transição suave */
 }
 
-.github {
-    color: var(--white);
-    background-color: #7a828ec6;
-    border: 3px solid #7a828e;
-    transition: 0.5s;
+/* Efeito ao passar o mouse sobre o ícone do Instagram */
+.instagram:hover {
+    background-color: #ff3040; /* Cor de fundo ao passar o mouse */
 }
+
+/* Estilos específicos para o ícone do GitHub */
+.github {
+    color: var(--white); /* Cor do ícone */
+    background-color: #7a828ec6; /* Cor de fundo ao padrão */
+    border: 3px solid #7a828e; /* Borda */
+    transition: 0.5s; /* Transição suave */
+}
+
+/* Efeito ao passar o mouse sobre o ícone do GitHub */
 .github:hover {
-    background-color: #7a828e;
+    background-color: #7a828e; /* Cor de fundo ao passar o mouse */
 }

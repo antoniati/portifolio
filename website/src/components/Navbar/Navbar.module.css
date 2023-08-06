@@ -1,107 +1,118 @@
+/* Estilos para o container da barra de navegação */
 #navbarContainer {
-    width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    background-color: var(--white);
-    box-shadow: 10px 0px 2px rgba(0, 0, 0, 0.216);
-    position: fixed;
-    z-index: 9998;
+    width: 100%; /* Largura total */
+    height: 70px; /* Altura fixa da barra de navegação */
+    display: flex; /* Exibe os elementos em linha */
+    justify-content: center; /* Centraliza horizontalmente */
+    background-color: var(--white); /* Cor de fundo branca */
+    box-shadow: 10px 0px 2px rgba(0, 0, 0, 0.216); /* Sombra à esquerda */
+    position: fixed; /* Posicionamento fixo na parte superior */
+    z-index: 9998; /* Camada de posicionamento para ficar acima do conteúdo */
 }
 
+/* Estilos para o conteúdo dentro da barra de navegação */
 .navbarContent {
-    width: 90%;
-    max-width: 1200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    width: 90%; /* Largura do conteúdo */
+    max-width: 1200px; /* Largura máxima */
+    display: flex; /* Exibe os elementos em linha */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaço entre os itens */
 }
 
+/* Estilos para o logotipo na barra de navegação */
 .navbarLogo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    display: flex; /* Exibe os elementos em linha */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 10px; /* Espaçamento entre os elementos */
 }
 
 .navbarLogoImage {
-    width: 36px;
+    width: 36px; /* Largura da imagem do logotipo */
 }
 
 .navbarLogoText {
-    font: 600 16px var(--work-sans);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    display: flex;
-    flex-direction: column;
-    color: var(--dark-blue);
+    font: 600 16px var(--work-sans); /* Estilo da fonte para o texto */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    letter-spacing: 2px; /* Espaçamento entre caracteres */
+    display: flex; /* Exibe os elementos em coluna */
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    color: var(--dark-blue); /* Cor do texto */
 }
 
 .navbarLogoText span {
-    color: var(--black);
-    font: 400 12px var(--hind);
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    color: var(--black); /* Cor do texto */
+    font: 400 12px var(--hind); /* Estilo da fonte para o texto */
+    letter-spacing: 1px; /* Espaçamento entre caracteres */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
 }
 
+/* Estilos para a lista de navegação */
 .navList {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    display: flex; /* Exibe os elementos em linha */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Espaçamento entre os elementos */
 }
 
+/* Estilos para os ícones na lista de navegação */
 .navList i {
-    color: var(--black);
-    font-size: 20px;
+    color: var(--black); /* Cor do ícone */
+    font-size: 20px; /* Tamanho do ícone */
 }
 
 .navList .linkedin {
-    margin-left: 30px;
+    margin-left: 30px; /* Espaçamento à esquerda para o ícone do LinkedIn */
 }
 
+/* Estilos para cada item de navegação */
 .navItem {
-    font: 600 16px var(--hind);
-    letter-spacing: 1px;
-    text-align: center;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0 10px 0;
-    color: var(--black);
+    font: 600 16px var(--hind); /* Estilo da fonte para o texto */
+    letter-spacing: 1px; /* Espaçamento entre caracteres */
+    text-align: center; /* Alinhamento do texto */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    display: flex; /* Exibe os elementos em linha */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 10px 0 10px 0; /* Espaçamento interno vertical */
+    color: var(--black); /* Cor do texto */
 }
 
+/* Estilos ao passar o mouse sobre os itens de navegação */
 .navItem:hover {
-    color: var(--dark-blue);
+    color: var(--dark-blue); /* Altera a cor do texto ao passar o mouse */
 }
 
+/* Estilos para a animação da linha sob os itens de navegação */
 .navItemWrapper {
-    position: relative;
+    position: relative; /* Posicionamento relativo */
 }
 
 .navItemWrapper::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 6px;
-    background-color: var(--dark-blue);
-    border-radius: 30px;
-    transition: width 0.3s;
+    content: ""; /* Conteúdo vazio antes do item de navegação */
+    position: absolute; /* Posicionamento absoluto */
+    bottom: 0; /* Posiciona no fundo */
+    left: 0; /* Posiciona à esquerda */
+    width: 0; /* Inicialmente sem largura */
+    height: 6px; /* Altura da linha */
+    background-color: var(--dark-blue); /* Cor da linha */
+    border-radius: 30px; /* Raio do canto arredondado */
+    transition: width 0.3s; /* Transição da largura */
 }
 
+/* Estilos ao passar o mouse sobre os itens de navegação */
 .navItemWrapper:hover::before {
-    width: 100%;
+    width: 100%; /* Aumenta a largura da linha */
 }
 
+/* Estilos aplicados em telas pequenas (até 768px) */
 @media screen and (max-width: 768px) {
     .navList {
-        display: none;
+        display: none; /* Oculta a lista de navegação */
     }
 }
 
+/* Estilos aplicados em telas ainda menores (até 375px) */
 @media screen and (max-width: 375px) {
     .navbarLogoText {
-        display: none;
+        display: none; /* Oculta o texto do logotipo */
     }
 }

@@ -1,20 +1,23 @@
+/* Estilos para a seção de projetos recentes */
 #recentsProjects {
-    padding: 100px 0 50px 0;
-    width: 95%;
-    max-width: 1250px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    padding: 100px 0 50px 0; /* Espaçamento interno */
+    width: 95%; /* Largura de 95% */
+    max-width: 1250px; /* Largura máxima */
+    display: flex; /* Exibe os elementos em uma coluna */
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    gap: 20px; /* Espaçamento entre elementos */
 }
 
+/* Estilos para os cards de projetos recentes */
 .recentsProjectsCards {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+    display: flex; /* Exibe os elementos em uma coluna */
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    gap: 40px; /* Espaçamento entre cards */
 }
 
+/* Estilos para telas de largura máxima de 768px */
 @media screen and (max-width: 768px) {
     #recentsProjects {
-        gap: 0;
+        gap: 0; /* Espaçamento entre elementos reduzido */
     }
 }

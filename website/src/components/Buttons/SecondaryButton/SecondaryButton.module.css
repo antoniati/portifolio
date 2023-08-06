@@ -1,41 +1,55 @@
+/**
+ * Estilos para o componente SecondaryButton.
+ */
+
+/* Estilos gerais do Botão Secundário */
 #secondaryButton {
-    font: 600 16px var(--hind);
-    text-transform: uppercase;
-    color: var(--dark-blue);
-    display: block;
-    text-align: center;
-    line-height: 60px;
-    width: 200px;
-    height: 60px;
-    padding: 0 20px;
-    box-sizing: border-box;
-    z-index: 1;
-    transition: all 0.5s ease-in-out;
-    background:
-        linear-gradient(to right,
-            var(--dark-blue) 0%,
-            var(--dark-blue) 20%,
-            var(--white) 20%,
-            var(--white) 100%);
-    background-size: 1500px;
-    background-position: 100% 0;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    border: 2px solid var(--dark-blue);
-    border-radius: 50rem;
-    transition: 0.5s ease-out;
-    letter-spacing: 1px;
+    width: 200px; /* Largura do botão */
+    height: 60px; /* Altura do botão */
+    padding: 0 20px; /* Espaçamento interno (horizontal) */
 
+    font: 600 16px var(--hind); /* Estilo da fonte */
+    letter-spacing: 1px; /* Espaçamento entre caracteres */
+    line-height: 60px; /* Altura da linha de texto */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    text-align: center; /* Alinhamento do texto */
+    color: var(--dark-blue); /* Cor do texto */
+
+    display: block; /* Exibe o botão como bloco */
+    box-sizing: border-box; /* Model box para incluir padding e borda */
+    z-index: 1; /* Camada de posicionamento */
+
+    background: linear-gradient(
+        to right,
+        var(--light-blue) 0%,
+        var(--light-blue) 20%,
+        var(--white) 20%,
+        var(--white) 100%
+    ); /* Gradiente de cores de fundo */
+    background-size: 1500px; /* Tamanho do gradiente */
+    background-position: 100% 0; /* Posição do gradiente */
+
+    border-radius: 50rem; /* Raio do canto arredondado */
+    border: 2px solid var(--dark-blue); /* Borda do botão */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra do botão */
+
+    transition: all 0.5s ease-in-out; /* Transição suave em animações */
 }
 
+/**
+ * Estilos aplicados ao passar o mouse sobre o Botão Secundário.
+ */
 #secondaryButton:hover {
-    letter-spacing: 2px;
-    background-position: 0 0;
-    color: var(--white);
+    letter-spacing: 2px; /* Altera o espaçamento entre caracteres */
+    background-position: 0 0; /* Altera a posição do gradiente ao passar o mouse */
+    color: var(--white); /* Altera a cor do texto ao passar o mouse */
 }
 
-
+/**
+ * Estilos específicos para telas pequenas (até 600px) para o Botão Secundário.
+ */
 @media screen and (max-width: 600px) {
-    #mainButton {
-        width: 275px;
+    #secondaryButton {
+        width: 240px; /* Largura do botão em telas pequenas */
     }
 }

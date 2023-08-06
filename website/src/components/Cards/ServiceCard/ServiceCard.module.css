@@ -1,5 +1,6 @@
+/* Estilos para a seção de conteúdo */
 .content {
-    width: 90%;
+    width: 90%; /* Largura da seção de conteúdo */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,58 +8,56 @@
     gap: 15px;
 }
 
+/* Estilos para o ícone na seção de conteúdo */
 .content i {
-    font-size: 4.5em;
-    transition: 0.5s;
+    font-size: 4.5em; /* Tamanho do ícone */
+    transition: 0.5s; /* Transição suave em animações */
 }
 
+/* Estilos para o título na seção de conteúdo */
 .content h3 {
-    font: 600 20px var(--work-sans);
-    text-transform: uppercase;
-    color: var(--black);
-    z-index: 1;
+    font: 600 20px var(--work-sans); /* Estilo da fonte */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    color: var(--black); /* Cor do texto */
+    z-index: 1; /* Camada de posicionamento */
 }
 
+/* Estilos para o parágrafo na seção de conteúdo */
 .content p {
-    font: 400 18px var(--hind);
-    letter-spacing: 1px;
-    color: var(--dark-gray);
-    z-index: 1;
-    margin-top: 10px;
+    font: 400 18px var(--hind); /* Estilo da fonte */
+    letter-spacing: 1px; /* Espaçamento entre caracteres */
+    color: var(--dark-gray); /* Cor do texto */
+    z-index: 1; /* Camada de posicionamento */
+    margin-top: 10px; /* Espaçamento superior */
 }
 
-
+/* Estilos específicos para telas médias (até 920px) */
 @media screen and (max-width: 920px) {
     .content {
-        width: 100%;
+        width: 100%; /* Largura da seção de conteúdo em telas médias */
     }
 }
 
+/* Estilos específicos para telas pequenas (até 600px) */
 @media screen and (max-width: 600px) {
+    /* Animação ao passar o mouse sobre a seção de conteúdo */
     .content:hover .box {
-        transform: translateY(0px);
+        transform: translateY(0px); /* Movimenta o elemento para cima */
     }
     
     .content {
-        width: 98%;
+        width: 98%; /* Largura da seção de conteúdo em telas pequenas */
     }
 
     .content h3 {
-        font-size: 16px;
+        font-size: 16px; /* Tamanho do título em telas pequenas */
     }
 
     .content p {
-        font-size: 16px;
+        font-size: 16px; /* Tamanho do parágrafo em telas pequenas */
     }
 
     .content i {
-        font-size: 3.5em;
-    }
-
-    .box {
-        top: 15px;
-        left: 15px;
-        right: 15px;
-        bottom: 15px;
+        font-size: 3.5em; /* Tamanho do ícone em telas pequenas */
     }
 }

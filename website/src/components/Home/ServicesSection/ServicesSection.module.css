@@ -1,23 +1,26 @@
+/* Estilos para a seção de serviços */
 #servicesSection {
-    padding: 100px 0 50px 0;
-    width: 95%;
-    max-width: 1250px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    padding: 100px 0 50px 0; /* Espaçamento interno */
+    width: 95%; /* Largura de 95% */
+    max-width: 1250px; /* Largura máxima */
+    display: flex; /* Exibe os elementos em uma coluna */
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    gap: 20px; /* Espaçamento entre elementos */
 }
 
+/* Estilos para o container dos cards de serviços */
 .containerCards {
-    display: flex;
-    gap: 30px;
+    display: flex; /* Exibe os elementos em uma linha */
+    gap: 30px; /* Espaçamento entre os cards */
 }
 
+/* Estilos para telas de largura máxima de 1024px */
 @media screen and (max-width: 1024px) {
     #servicesSection {
-        padding: 40px 0;
+        padding: 40px 0; /* Espaçamento interno reduzido na parte superior e inferior */
     }
 
     .containerCards {
-        flex-wrap: wrap;
+        flex-wrap: wrap; /* Quebra para múltiplas linhas quando necessário */
     }
 }

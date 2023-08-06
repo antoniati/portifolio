@@ -1,62 +1,64 @@
 /* ToggleMenu.module.css */
 
+/* Estilos para o botão de alternância do menu */
 .toggleMenuButton {
-  width: 40px;
-  height: 30px;
-  cursor: pointer;
-  position: relative;
-  background: transparent;
-  border: none;
-  padding: 0;
-  display: none;
-  justify-content: center;
-  align-items: center;
+  width: 40px; /* Largura do botão */
+  height: 30px; /* Altura do botão */
+  cursor: pointer; /* Cursor em formato de mão ao passar por cima */
+  position: relative; /* Posicionamento relativo para elementos filhos absolutos */
+  background: transparent; /* Fundo transparente */
+  border: none; /* Sem borda */
+  padding: 0; /* Espaçamento interno */
+  display: none; /* Inicialmente não exibido */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
 }
 
+/* Estilos para as linhas do ícone "hamburguer" */
 .toggleMenuButton span {
-  position: absolute;
-  width: 30px;
-  height: 4px;
-  background-color: #333;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  position: absolute; /* Posicionamento absoluto em relação ao elemento pai */
+  width: 30px; /* Largura das linhas do ícone */
+  height: 4px; /* Altura das linhas do ícone */
+  background-color: #333; /* Cor das linhas do ícone */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Transições suaves para transformações */
 }
 
-/* Posição das linhas do botão "hamburguer" */
+/* Posição das linhas do ícone "hamburguer" */
 .toggleMenuButton span:nth-child(1) {
-  top: 0;
+  top: 0; /* Posiciona a primeira linha no topo */
 }
 
 .toggleMenuButton span:nth-child(2) {
-  top: 50%;
-  transform: translateY(-50%);
+  top: 50%; /* Posiciona a segunda linha no centro vertical */
+  transform: translateY(-50%); /* Ajusta o posicionamento vertical */
 }
 
 .toggleMenuButton span:nth-child(3) {
-  bottom: 0;
+  bottom: 0; /* Posiciona a terceira linha na parte inferior */
 }
 
-/* Estilo do botão "hamburguer" */
+/* Estilo das linhas do ícone "hamburguer" quando não está aberto */
 .toggleMenuButton:not(.open) span:nth-child(1),
 .toggleMenuButton:not(.open) span:nth-child(3) {
-  width: 20px;
+  width: 20px; /* Reduz a largura das linhas para criar um efeito de "fechar" */
 }
 
-/* Estilo do botão "X" */
+/* Estilo das linhas do ícone "X" quando está aberto */
 .toggleMenuButton.open span:nth-child(1) {
-  transform: translateY(12px) rotate(45deg);
+  transform: translateY(12px) rotate(45deg); /* Rotaciona e move a primeira linha */
 }
 
 .toggleMenuButton.open span:nth-child(2) {
-  opacity: 0;
+  opacity: 0; /* Torna a segunda linha invisível para criar o efeito "X" */
 }
 
 .toggleMenuButton.open span:nth-child(3) {
-  transform: translateY(-12px) rotate(-45deg);
+  transform: translateY(-12px) rotate(-45deg); /* Rotaciona e move a terceira linha */
 }
 
-
+/* Estilos aplicados em telas pequenas (até 768px) */
 @media screen and (max-width: 768px) {
   .toggleMenuButton {
-    display: flex;
+    display: flex; /* Exibe o botão de alternância do menu */
   }
 }

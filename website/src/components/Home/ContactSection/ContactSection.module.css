@@ -1,54 +1,59 @@
+/* Estilos para a seção de contato */
 #contact {
-    padding: 100px 0;
-    width: 98%;
-    max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 50px 0; /* Espaçamento interno vertical */
+    width: 98%; /* Largura máxima da seção */
+    max-width: 1200px; /* Largura máxima da seção */
+    display: flex; /* Exibe os elementos em uma linha */
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center; /* Alinha os elementos no centro horizontalmente */
 }
 
+/* Estilos para o conteúdo de contato */
 .contactContent {
-    width: 100%;
-    display: flex;
-    gap: 20px;
+    width: 100%; /* Largura total */
+    display: flex; /* Exibe os elementos em uma linha */
+    gap: 20px; /* Espaçamento horizontal entre os elementos */
 }
 
+/* Estilos para as opções de contato */
 .contactOptions {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    width: 50%; /* Largura de metade do conteúdo */
+    display: flex; /* Exibe os elementos em uma coluna */
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    gap: 20px; /* Espaçamento vertical entre os elementos */
 }
 
+/* Estilos para cada item de contato */
 .contactItem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    display: flex; /* Exibe os elementos em uma coluna */
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center; /* Alinha os elementos no centro horizontalmente */
+    justify-content: center; /* Centraliza verticalmente os elementos */
+    gap: 20px; /* Espaçamento vertical entre os elementos */
+    padding: 20px; /* Espaçamento interno */
 }
 
+/* Estilos para os títulos de cada item de contato */
 .contactItem h3 {
-    width: 90%;
-    text-align: center;
-    font: 600 18px var(--hind);
-    padding: 10px;
-    border-bottom: 1px solid var(--dark-gray);
+    width: 90%; /* Largura do título */
+    text-align: center; /* Alinhamento do texto no centro */
+    font: 600 18px var(--hind); /* Estilo da fonte */
+    padding: 10px; /* Espaçamento interno */
+    border-bottom: 1px solid var(--dark-gray); /* Linha de separação */
 }
 
-
+/* Estilos para telas de largura máxima de 1024px */
 @media screen and (max-width: 1024px) {
     .contactContent {
-        width: 95%;
-        flex-direction: column;
-        align-items: center;
+        width: 95%; /* Reduz a largura do conteúdo */
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        align-items: center; /* Alinha os elementos no centro horizontalmente */
     }
 
     .contactOptions {
-        width: 100%;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 30px;
+        width: 100%; /* Largura total para as opções de contato */
+        flex-direction: row; /* Alinha as opções horizontalmente */
+        flex-wrap: wrap; /* Quebra as opções para uma nova linha */
+        gap: 30px; /* Espaçamento horizontal entre as opções */
     }
 }

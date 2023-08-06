@@ -1,10 +1,12 @@
+/* Estilos para o item de contato */
 #contactItem {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Define a orientação dos elementos como coluna */
 }
 
+/* Estilos para o rótulo do item de contato */
 .contactItemLabel {
-    font: 600 14px var(--hind);
-    color: var(--black);
-    margin-bottom: 5px;
+    font: 600 14px var(--hind); /* Estilo da fonte */
+    color: var(--black); /* Cor do texto */
+    margin-bottom: 5px; /* Espaçamento inferior */
 }

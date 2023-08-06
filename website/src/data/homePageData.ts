@@ -1,18 +1,28 @@
+/**
+ * Definição dos conteúdos das seções da página inicial.
+ */
+
+// Importa os Icones dos Cartões de Projeto
 import { FcMultipleDevices, FcFinePrint, FcSupport } from "react-icons/fc";
+
+// Importa a Tipagem dos conteúdos das seções da página inicia
 import { PresentationSection, ServicesSection, ServiceCard, ProjectsSection, ProjectCard, FAQSection, FAQItem, ContactSection } from '@/types/homePageTypings';
 
+// Conteúdo para a seção de apresentaçã
 export const presentationSection: PresentationSection = {
     title: 'Programador Freelancer Felipe Antoniati',
     subtitle: 'Criando Websites Sob Medida para seu Sucesso Digital',
-    buttonText:  "Entre em contato",
+    buttonText: "Entre em contato",
     buttonURL: "#contact"
 };
 
+// Conteúdo para a seção de serviços
 export const servicesSection: ServicesSection = {
     title: 'Serviços',
     description: 'Soluções digitais inovadoras e alinhadas com suas metas',
 };
 
+// Cartões de serviço
 export const serviceCards: ServiceCard[] = [
     {
         icon: FcMultipleDevices,
@@ -31,11 +41,13 @@ export const serviceCards: ServiceCard[] = [
     },
 ];
 
+// Conteúdo para a seção de projetos
 export const projectsSection: ProjectsSection = {
     title: 'PROJETOS RECENTES',
     description: 'Explore Minhas Jornadas Digitais mais Recentes',
 };
 
+// Cartões de projeto
 export const projectCards: ProjectCard[] = [
     {
         imageURL: '/images/layout-website-entremares.png',
@@ -47,7 +59,7 @@ export const projectCards: ProjectCard[] = [
     },
     {
         imageURL: "/images/layout-website-connecthouse.png",
-        imageAltText:"Imagem da página inicial do website da empresa connect house",
+        imageAltText: "Imagem da página inicial do website da empresa connect house",
         title: 'Website - Connect House Empresa de Automação',
         description: 'O projeto Connect House representa a convergência de tecnologia e criatividade. Neste projeto, dei vida à presença digital desta empresa, construindo um website moderno e responsivo que reflete sua identidade. Através de uma abordagem centrada no usuário, desenvolvi um espaço online que vai além de informações básicas, incorporando um formulário de contato intuitivo, integração perfeita com o Google Maps e um canal direto via WhatsApp',
         date: '22/07/2023',
@@ -55,46 +67,45 @@ export const projectCards: ProjectCard[] = [
     },
 ];
 
+// Conteúdo para a seção de perguntas frequentes (FAQ)
 export const faqSection: FAQSection = {
     title: 'PERGUNTAS FREQUENTES',
     description: 'Suporte Informado para Suas Dúvidas',
 };
 
+// Itens de perguntas frequentes
 export const faqItems: FAQItem[] = [
     {
-        question: 'Quais tecnologias você utiliza para desenvolver websites?',
-        answer: 'Utilizo uma variedade de tecnologias modernas...',
-    },
-    {
         question: 'Como funciona o processo de desenvolvimento de websites?',
-        answer: 'O processo de desenvolvimento começa com uma análise detalhada dos requisitos do projeto...',
+        answer: 'O processo de desenvolvimento começa com uma análise detalhada dos requisitos do projeto. Em seguida, elaboramos um plano de design e funcionalidades. Após a aprovação do design, iniciamos a fase de desenvolvimento, mantendo você informado em cada etapa',
     },
     {
-        question: 'Você oferece serviços de otimização de SEO?',
-        answer: 'Sim, além de criar websites incríveis, também ofereço serviços de otimização de SEO...',
+        question: 'Ofereço serviços de otimização de SEO?',
+        answer: 'Sim, além de criar websites incríveis, também ofereço serviços de otimização de SEO. Isso inclui a otimização de conteúdo, estrutura do site e configurações técnicas para melhorar a visibilidade nos motores de busca',
     },
     {
         question: 'Qual é o prazo médio para a conclusão de um projeto?',
-        answer: 'Os prazos podem variar dependendo da complexidade do projeto...',
+        answer: 'Os prazos podem variar dependendo da complexidade do projeto. Geralmente, projetos de websites completos levam de 4 a 8 semanas. No entanto, prazos mais específicos serão discutidos após avaliarmos os requisitos do seu projeto',
     },
     {
-        question: 'Como você garante que meu website seja responsivo em dispositivos móveis?',
-        answer: 'Todos os websites que desenvolvo são construídos seguindo as práticas de design responsivo...',
+        question: 'Como garanto que seu website se adapte em dispositivos móveis?',
+        answer: 'Todos os websites que desenvolvo são construídos seguindo as práticas de design responsivo. Isso significa que seu site se ajustará automaticamente para oferecer uma ótima experiência em dispositivos móveis, tablets e desktops',
     },
     {
-        question: 'Quais tipos de clientes você já trabalhou no passado?',
-        answer: 'Colaborei com uma ampla variedade de clientes, desde startups e pequenas empresas até empresas estabelecidas...',
+        question: 'Ofereço suporte após a conclusão do projeto?',
+        answer: 'Sim, após a conclusão do projeto, ofereço serviços de suporte técnico e manutenção contínua. Isso garante que seu website continue funcionando sem problemas e esteja atualizado com as últimas atualizações',
     },
     {
-        question: 'Você oferece suporte após a conclusão do projeto?',
-        answer: 'Sim, após a conclusão do projeto, ofereço serviços de suporte técnico e manutenção contínua...',
+        question: 'Quais tecnologias utilizo para desenvolver websites?',
+        answer: 'Utilizo uma variedade de tecnologias modernas, incluindo HTML5, CSS3, JavaScript, React.js, Node.js e Next.js. Essas tecnologias me permitem criar websites responsivos e interativos de alta qualidade',
     },
     {
-        question: 'Como posso iniciar um projeto com você?',
-        answer: 'É fácil! Basta entrar em contato por meio do formulário nesta página ou por e-mail...',
+        question: 'Como iniciar um projeto comigo?',
+        answer: 'É fácil! Basta entrar em contato por meio do formulário nesta página ou por e-mail. Vamos agendar uma conversa inicial para discutir suas ideias e objetivos, e a partir daí, começaremos a transformar sua visão em realidade digital',
     },
 ];
 
+// Conteúdo para a seção de contato
 export const contactSection: ContactSection = {
     title: 'ENTRE EM CONTATO',
     description: 'Vamos Iniciar uma Conversa Sobre a Transformação Digital',

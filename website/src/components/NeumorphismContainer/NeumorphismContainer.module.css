@@ -1,29 +1,34 @@
+/* Estilos para o container principal */
 #container {
-    width: 100%;
-    height: auto;
-    padding: 15px;
+    width: 100%; /* Largura total */
+    height: auto; /* Altura automática de acordo com o conteúdo */
+    padding: 15px; /* Espaçamento interno */
     box-shadow: 
-        inset 5px 5px 5px rgba(0, 0, 0, 0.05),
-        inset -5px -5px 5px rgba(255, 255, 255, 0.5),
-        5px 5px 5px rgba(0, 0, 0, 0.05),
-        -5px -5px 5px rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
+        inset 5px 5px 5px rgba(0, 0, 0, 0.05), /* Sombra interna esquerda e superior */
+        inset -5px -5px 5px rgba(255, 255, 255, 0.5), /* Sombra interna direita e inferior */
+        5px 5px 5px rgba(0, 0, 0, 0.05), /* Sombra externa direita e inferior */
+        -5px -5px 5px rgba(255, 255, 255, 0.5); /* Sombra externa esquerda e superior */
+    border-radius: 5px; /* Canto arredondado */
 }
 
+/* Estilos para o conteúdo interno do container */
 .content {
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    background-color: var(--white);
-    border-top: 1px solid var(--white-ghost);
-    border-radius: 5px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    padding: 20px; /* Espaçamento interno */
+    background-color: var(--white); /* Cor de fundo branca */
+    border-top: 1px solid var(--white-ghost); /* Borda superior */
+    border-radius: 5px; /* Canto arredondado */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
+/* Estilos aplicados em telas pequenas (até 600px) */
 @media screen and (max-width: 600px) {
-#container {
-    padding: 10px;
-}
+    #container {
+        padding: 10px; /* Espaçamento interno reduzido */
+    }
 
-.content {padding: 15px;}
+    .content {
+        padding: 15px; /* Espaçamento interno reduzido */
+    }
 }

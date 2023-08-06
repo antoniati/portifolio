@@ -1,0 +1,13 @@
+#faq {
+    width: 100%; /* Largura total */
+    padding: 50px 0; /* Espaçamento interno */
+    display: flex; /* Exibe os elementos em uma coluna */
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center; /* Alinha os elementos no centro horizontalmente */
+    background-color: var(--white-ghost); /* Cor de fundo */
+}
+
+.faqItemsContainer {
+    width: 95%;
+    max-width: 1200px;
+}

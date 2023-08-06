@@ -1,51 +1,75 @@
-import {IconBaseProps} from "react-icons"
+//Importa a Tipagem para os Icones dos cartões de serviço
+import { IconBaseProps } from "react-icons"
 
+/**
+ * Definição da estrutura de seção de apresentação.
+ */
 export interface PresentationSection {
-    title: string;
-    subtitle: string;
-    buttonText: string;
-    buttonURL: string;
-  }
-  
-  export interface ServicesSection {
-    title: string;
-    description: string;
-  }
-  
-  export interface ServiceCard {
-    icon: React.ComponentType<IconBaseProps>;
-    title: string;
-    description: string;
-  }
-  
-  export interface ProjectsSection {
-    title: string;
-    description: string;
-  }
-  
-  export interface ProjectCard {
-    imageURL: string;
-    imageAltText: string;
-    title: string;
-    description: string;
-    date: string;
-    duration: string;
-  }
-  
-  export interface FAQSection {
-    title: string;
-    description: string;
-  }
-  
-  export interface FAQItem {
-    question: string;
-    answer: string;
-  }
-  
-  export interface ContactSection {
-    title: string;
-    description: string;
-    titleWhatsapp: string;
-    titleSocialMedias: string;
-  }
-  
+  title: string;        // Título da seção de apresentação
+  subtitle: string;     // Subtítulo da seção de apresentação
+  buttonText: string;   // Texto exibido no botão da seção de apresentação
+  buttonURL: string;    // URL para a qual o botão da seção de apresentação redireciona
+}
+
+/**
+* Definição da estrutura de seção de serviços.
+*/
+export interface ServicesSection {
+  title: string;        // Título da seção de serviços
+  description: string;  // Descrição da seção de serviços
+}
+
+/**
+* Definição da estrutura de um cartão de serviço.
+*/
+export interface ServiceCard {
+  icon: React.ComponentType<IconBaseProps>;  // Ícone do serviço
+  title: string;        // Título do serviço
+  description: string;  // Descrição do serviço
+}
+
+/**
+* Definição da estrutura de seção de projetos.
+*/
+export interface ProjectsSection {
+  title: string;        // Título da seção de projetos
+  description: string;  // Descrição da seção de projetos
+}
+
+/**
+* Definição da estrutura de um cartão de projeto.
+*/
+export interface ProjectCard {
+  imageURL: string;     // URL da imagem do projeto
+  imageAltText: string;  // Texto alternativo da imagem do projeto
+  title: string;        // Título do projeto
+  description: string;  // Descrição do projeto
+  date: string;         // Data do projeto
+  duration: string;     // Duração do projeto
+}
+
+/**
+* Definição da estrutura de seção de perguntas frequentes.
+*/
+export interface FAQSection {
+  title: string;        // Título da seção de perguntas frequentes
+  description: string;  // Descrição da seção de perguntas frequentes
+}
+
+/**
+* Definição da estrutura de um item de perguntas frequentes.
+*/
+export interface FAQItem {
+  question: string;     // Pergunta da FAQ
+  answer: string;       // Resposta da FAQ
+}
+
+/**
+* Definição da estrutura de seção de contato.
+*/
+export interface ContactSection {
+  title: string;                  // Título da seção de contato
+  description: string;            // Descrição da seção de contato
+  titleWhatsapp: string;          // Título para o link do WhatsApp
+  titleSocialMedias: string;      // Título para as redes sociais
+}
