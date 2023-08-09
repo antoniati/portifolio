@@ -9,7 +9,7 @@ export default function FAQItem() {
 
     const toggleDescription = (index: number) => {
         if (expandedItemIndex === index) {
-            setExpandedItemIndex(-1); // Fecha o item se já estiver aberto
+            setExpandedItemIndex(-1);
         } else {
             setExpandedItemIndex(index);
         }

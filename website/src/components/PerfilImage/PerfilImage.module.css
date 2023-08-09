@@ -14,31 +14,6 @@
         -5px -5px 5px rgba(255, 255, 255, 0.5); /* Sombra externa esquerda e superior */
 }
 
-/* Elemento antes do contêiner da imagem para o efeito animado */
-#boxImage::before {
-    content: "";
-    position: absolute;
-    inset: -20px 80px; /* Posicionamento */
-    background: var(--dark-blue); /* Cor de fundo azul escura */
-    transition: 0.5s; /* Transição suave */
-    animation: animate 4s linear infinite; /* Animação de rotação infinita */
-}
-
-/* Animação de rotação */
-@keyframes animate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-/* Efeito ao passar o mouse sobre o contêiner da imagem */
-#boxImage:hover::before {
-    inset: -20px 0px; /* Reposiciona o elemento antes */
-}
-
 /* Elemento após o contêiner da imagem para criar o círculo branco interno */
 #boxImage::after {
     content: "";

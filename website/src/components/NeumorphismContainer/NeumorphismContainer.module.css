@@ -2,7 +2,7 @@
 #container {
     width: 100%; /* Largura total */
     height: auto; /* Altura automática de acordo com o conteúdo */
-    padding: 15px; /* Espaçamento interno */
+    padding: 10px; /* Espaçamento interno */
     box-shadow: 
         inset 5px 5px 5px rgba(0, 0, 0, 0.05), /* Sombra interna esquerda e superior */
         inset -5px -5px 5px rgba(255, 255, 255, 0.5), /* Sombra interna direita e inferior */
