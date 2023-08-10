@@ -35,4 +35,27 @@ export interface ConstantsDataProps {
         services: string;         // Texto para o item "Serviços" na navegação
         contact: string;          // Texto para o item "Contato" na navegação
     }
+
+    navItem: [
+        {
+            title: string;
+            URLToPage: string;
+        },
+        {
+            title: string;
+            URLToPage: string;
+        },
+        {
+            title: string;
+            URLToPage: string;
+        },
+        {
+            title: string;
+            URLToPage: string;
+        },
+        {
+            title: string;
+            URLToPage: string;
+        },
+    ],
 }

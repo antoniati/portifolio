@@ -2,36 +2,29 @@
 .dropdownMenu {
     width: 100%;
     height: 100vh; /* Altura total da tela */
-    padding: 40px; /* Espaçamento interno */
+    padding: 20px 10px;
 
-    position: absolute;
-    top: 70.9px; /* Posição superior em relação ao topo */
+    position: fixed;
+    top: 69px; /* Posição superior em relação ao topo */
     left: 0;
 
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    gap: 20px; /* Espaçamento vertical entre os elementos */
+    gap: 15px; /* Espaçamento vertical entre os elementos */
     background-color: var(--white-ghost); /* Cor de fundo */
-    
+    z-index: 9997;
     transition: all 0.3s ease-in-out; /* Transição suave em animações */
 }
 
 /* Estilos para os itens do menu suspenso */
 .dropDownnavItem {
     width: 100%;
-    height: 80px; /* Altura dos itens */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: var(--white); /* Cor de fundo */
-    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
-        inset -5px -5px 5px rgba(255, 255, 255, 0.5),
-        5px 5px 5px rgba(0, 0, 0, 0.05),
-        -5px -5px 5px rgba(255, 255, 255, 0.5); /* Sombra */
-    border-radius: 5px; /* Canto arredondado */
 }
 
 /* Estilos para os links dentro dos itens do menu suspenso */
@@ -41,10 +34,15 @@
     color: var(--dark-blue); /* Cor do texto */
     letter-spacing: 1px; /* Espaçamento entre caracteres */
     width: 90%;
-    padding: 15px; /* Espaçamento interno */
-    border-radius: 5px; /* Canto arredondado */
-    background-color: var(--white-ghost); /* Cor de fundo */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: all 0.5s ease-in-out;
+}
+
+.dropDownnavLink:hover {
+    letter-spacing: 2px;
+}
+
+.dropDownSocialMedias {
+    margin-top: 1rem;
 }
 
 /* Estilos aplicados em telas grandes (a partir de 768px) */

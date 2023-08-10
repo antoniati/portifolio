@@ -19,7 +19,7 @@
   position: absolute; /* Posicionamento absoluto em relação ao elemento pai */
   width: 30px; /* Largura das linhas do ícone */
   height: 4px; /* Altura das linhas do ícone */
-  background-color: #333; /* Cor das linhas do ícone */
+  background-color: var(--black); /* Cor das linhas do ícone */
   transition: transform 0.3s ease, opacity 0.3s ease; /* Transições suaves para transformações */
 }
 

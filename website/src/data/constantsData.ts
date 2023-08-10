@@ -41,4 +41,27 @@ export const constantsData: ConstantsDataProps = {
         services: "Serviços",            // Texto para o item "Serviços" na navegação
         contact: "Contato",              // Texto para o item "Contato" na navegação
     },
+
+    navItem: [
+        {
+            title: "Inicio", 
+            URLToPage: "https://felipeantoniati.vercel.app/"
+        },
+        {
+            title: "Sobre",
+            URLToPage: "https://felipeantoniati.vercel.app/sobre"
+        },
+        {
+            title: "Portifolio", 
+            URLToPage: "https://felipeantoniati.vercel.app/portifolio"
+        },
+        {
+            title: "Serviços", 
+            URLToPage: "https://felipeantoniati.vercel.app/servicos"
+        },
+        {
+            title: "Contato", 
+            URLToPage: "https://felipeantoniati.vercel.app/contato"
+        },
+    ],
 };
