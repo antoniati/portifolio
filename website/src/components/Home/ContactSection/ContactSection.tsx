@@ -5,6 +5,7 @@ import WhatsAppButton from "@/components/Buttons/WhatsappButton/WhatsappButton";
 import SocialMedias from "@/components/SocialMedias/SocialMedias";
 import {contactSection} from "@/data/homePageData";
 import styles from "./ContactSection.module.css";
+import TelegramButton from "@/components/Buttons/TelegramButton/TelegramButton";
 
 const ContactSection: React.FC = () => {
     return (
@@ -21,6 +22,7 @@ const ContactSection: React.FC = () => {
                         <div className={styles.contactItem}>
                             <h3>{contactSection.titleWhatsapp}</h3>
                             <WhatsAppButton />
+                            <TelegramButton />
                         </div>
                     </NeumorphismContainer>
                     <NeumorphismContainer>

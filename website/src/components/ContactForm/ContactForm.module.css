@@ -1,16 +1,8 @@
-/* Estilos para o formulário */
-#form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Espaçamento vertical entre os elementos do formulário */
-}
-
 /* Estilos para o título do formulário */
 .formTitle {
     width: 100%;
     text-align: center;
     font: 600 18px var(--hind); /* Estilo da fonte */
-    padding-bottom: 10px;
     border-bottom: 1px solid var(--dark-gray); /* Borda inferior */
 }
 
@@ -37,16 +29,17 @@
     transition: all 0.5s ease-in-out; /* Transição suave em animações */
     background:
         linear-gradient(to right,
-            var(--dark-blue) 0%,
-            var(--dark-blue) 20%,
-            var(--light-blue) 20%,
-            var(--light-blue) 100%); /* Gradiente de cores de fundo */
+            var(--black) 0%,
+            var(--black) 20%,
+            #4b4b4b 20%,
+            #4b4b4b 100%); /* Gradiente de cores de fundo */
     background-size: 1500px; /* Tamanho do gradiente */
     background-position: 100% 0; /* Posição do gradiente */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra do botão */
-    border: 2px solid var(--dark-blue); /* Borda do botão */
+    border: 2px solid var(--black); /* Borda do botão */
     border-radius: 50rem; /* Raio do canto arredondado */
     transition: 0.5s; /* Transição suave */
+    margin-top: 2rem;
 }
 
 /* Estilos aplicados ao passar o mouse sobre o botão do formulário */
@@ -58,8 +51,8 @@
 /* Estilos para o contêiner do botão do formulário */
 .buttonForm {
     width: 100%;
+    height: 100%; 
     display: flex;
-    height: 80px; /* Altura do contêiner do botão */
     align-items: center;
     justify-content: center;
 }

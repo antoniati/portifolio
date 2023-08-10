@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer/Footer";
 import ContactSection from "@/components/Home/ContactSection/ContactSection";
 import FAQSection from "@/components/Home/FAQSection/FAQSection";
 import ProjectSection from "@/components/Home/ProjectsSection/ProjectSection";
@@ -15,6 +16,7 @@ export default function Services() {
                 <FAQSection />
                 <ContactSection />
             </main>
+            <Footer />
         </>
     );
 };

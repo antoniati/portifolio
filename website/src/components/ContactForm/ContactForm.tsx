@@ -14,9 +14,9 @@ const ContactForm: React.FC = () => {
                     <h3 className={styles.formTitle}> Envie uma mensagem </h3>
                     <input type="hidden" name="_next" value="https://felipeantoniati.vercel.app/pages/sucess.html" />
                  
-                    <ContactItem labelFor="name" labelText="Seu Nome">
+                    {/* <ContactItem labelFor="name" labelText="Seu Nome">
                         <input type="text" placeholder="Ex: Jhon" />
-                    </ContactItem>
+                    </ContactItem> */}
                     <ContactItem labelFor="email" labelText="Seu Email">
                         <input type="email" placeholder="Ex: Jhon" />
                     </ContactItem>
