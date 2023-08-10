@@ -19,11 +19,13 @@
     box-sizing: border-box; /* Model box para incluir padding e borda */
     z-index: 1; /* Camada de posicionamento */
 
-    background: linear-gradient(to right,
-            var(--dark-blue) 0%,
-            var(--dark-blue) 20%,
-            var(--light-blue) 20%,
-            var(--light-blue) 100%); /* Gradiente de cores de fundo */
+    background: linear-gradient(
+        to right,
+        var(--dark-blue) 0%,
+        var(--dark-blue) 20%,
+        var(--light-blue) 20%,
+        var(--light-blue) 100%
+    ); /* Gradiente de cores de fundo */
     background-size: 1500px; /* Tamanho do gradiente */
     background-position: 100% 0; /* Posição do gradiente */
 

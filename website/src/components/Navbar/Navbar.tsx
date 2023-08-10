@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs"
 
 import DropdownMenu from '@/components/Navbar/DropdownMenu/DropDownMenu';
 import ToggleMenu from '@/components/Navbar/ToggleMenu/ToggleMenu';
