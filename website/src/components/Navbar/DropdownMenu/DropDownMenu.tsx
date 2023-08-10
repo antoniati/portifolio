@@ -14,8 +14,8 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ isOpen }) => {
     <ul className={`${styles.dropdownMenu} ${isOpen ? styles.open : ''}`}>
       {navItem.map((navItem) => {
         return (
-          <NeumorphismContainer>
-            <li className={styles.dropDownnavItem} key={navItem.title}>
+          <NeumorphismContainer key={navItem.title}>
+            <li className={styles.dropDownnavItem}>
               <a
                 className={styles.dropDownnavLink}
                 href={navItem.URLToPage}
