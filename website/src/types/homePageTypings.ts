@@ -4,12 +4,6 @@ import { IconBaseProps } from "react-icons"
 /**
  * Definição da estrutura de seção de apresentação.
  */
-export interface PresentationSection {
-  title: string;        // Título da seção de apresentação
-  subtitle: string;     // Subtítulo da seção de apresentação
-  buttonText: string;   // Texto exibido no botão da seção de apresentação
-  buttonURL: string;    // URL para a qual o botão da seção de apresentação redireciona
-}
 
 /**
 * Definição da estrutura de seção de serviços.
@@ -46,6 +40,7 @@ export interface ProjectCard {
   description: string;  // Descrição do projeto
   date: string;         // Data do projeto
   duration: string;     // Duração do projeto
+  buttonURL: string;
 }
 
 /**

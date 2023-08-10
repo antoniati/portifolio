@@ -6,15 +6,7 @@
 import { FcMultipleDevices, FcFinePrint, FcSupport } from "react-icons/fc";
 
 // Importa a Tipagem dos conteúdos das seções da página inicia
-import { PresentationSection, ServicesSection, ServiceCard, ProjectsSection, ProjectCard, FAQSection, FAQItem, ContactSection } from '@/types/homePageTypings';
-
-// Conteúdo para a seção de apresentaçã
-export const presentationSection: PresentationSection = {
-    title: 'Programador Freelancer Felipe Antoniati',
-    subtitle: 'Criando Websites Sob Medida para seu Sucesso Digital',
-    buttonText: "Entre em contato",
-    buttonURL: "#contact"
-};
+import { ServicesSection, ServiceCard, ProjectsSection, ProjectCard, FAQSection, FAQItem, ContactSection } from '@/types/homePageTypings';
 
 // Conteúdo para a seção de serviços
 export const servicesSection: ServicesSection = {
@@ -56,6 +48,7 @@ export const projectCards: ProjectCard[] = [
         description: 'O projeto Phoenix Entre Mares é um testemunho do meu compromisso em criar experiências digitais excepcionais. Com dedicação, transformei a visão deste condomínio em um website moderno e responsivo. Este espaço virtual traz não apenas informações essenciais sobre o empreendimento, mas também oferece uma interação fluída através de um formulário de contato eficiente e integração perfeita com o Google Maps',
         date: '20/06/2023',
         duration: '15 Dias',
+        buttonURL: "https://phoenixentremares.vercel.app"
     },
     {
         imageURL: "/images/layout-website-connecthouse.png",
@@ -64,6 +57,7 @@ export const projectCards: ProjectCard[] = [
         description: 'O projeto Connect House representa a convergência de tecnologia e criatividade. Neste projeto, dei vida à presença digital desta empresa, construindo um website moderno e responsivo que reflete sua identidade. Através de uma abordagem centrada no usuário, desenvolvi um espaço online que vai além de informações básicas, incorporando um formulário de contato intuitivo, integração perfeita com o Google Maps e um canal direto via WhatsApp',
         date: '22/07/2023',
         duration: '15 Dias',
+        buttonURL: "https://connecthouse.vercel.app"
     },
 ];
 

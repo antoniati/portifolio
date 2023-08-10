@@ -1,0 +1,23 @@
+.sucessPage {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 10px;
+    gap: 20px;
+}
+
+.sucessPage h1 {
+    text-align: center;
+    font: 600 30px var(--hind);
+    letter-spacing: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    border-bottom: 1px solid var(--dark-blue);
+}
+.sucessPage p {
+    text-align: center;
+    font: 300 26px var(--hind);
+}
