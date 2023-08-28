@@ -16,7 +16,7 @@ export default function TelegramButton() {
     return (
         <a
             id={styles.telegram}
-            href="https://t.me/13981257704" // URL do Telegram para redirecionamento
+            href="https://t.me/felipeantoniati" // URL do Telegram para redirecionamento
             target="_blank" // Abre o link em uma nova aba
             rel="noopener noreferrer"
         >
