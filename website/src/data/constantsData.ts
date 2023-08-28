@@ -18,19 +18,19 @@ export const constantsData: ConstantsDataProps = {
 
     // Dados da logo do site
     logo: {
-        logoImageURL: "https://felipeantoniati.vercel.app/logo.svg",  // URL da imagem da logo
-        logoAltText: "Logo do Edifício Entre Mares",                 // Texto alternativo da logo
+        logoImageURL: "https://felipeantoniati.com.br/logo.svg",  // URL da imagem da logo
+        logoAltText: "Logo do Programador freelancer Felipe Antoniati",                 // Texto alternativo da logo
     },
 
     // URLs para diferentes páginas do site
     pageLinks: {
-        URLToHomePage: "https://felipeantoniati.vercel.app/",                           // URL para a página inicial
-        URLToAboutPage: "https://felipeantoniati.vercel.app/sobre",                    // URL para a página "Sobre"
-        URLToPortifolioPage: "https://felipeantoniati.vercel.app/portifolio",           // URL para a página "Portfólio"
-        URLToServicesPage: "https://felipeantoniati.vercel.app/servicos",               // URL para a página "Serviços"
-        URLToContactPage: "https://felipeantoniati.vercel.app/contato",                 // URL para a página "Contato"
-        URLToEntreMaresWebsiteDetails: "https://felipeantoniati.vercel.app/portifolio/entremares",  // URL para os detalhes do website "Entre Mares"
-        URLToConnectHouseWebsiteDetails: "https://felipeantoniati.vercel.app/portifolio/connecthouse",  // URL para os detalhes do website "Connect House"
+        URLToHomePage: "https://felipeantoniati.com.br/",                           // URL para a página inicial
+        URLToAboutPage: "https://felipeantoniati.com.br/sobre",                    // URL para a página "Sobre"
+        URLToPortifolioPage: "https://felipeantoniati.com.br/portifolio",           // URL para a página "Portfólio"
+        URLToServicesPage: "https://felipeantoniati.com.br/servicos",               // URL para a página "Serviços"
+        URLToContactPage: "https://felipeantoniati.com.br/contato",                 // URL para a página "Contato"
+        URLToEntreMaresWebsiteDetails: "https://felipeantoniati.com.br/portifolio/entremares",  // URL para os detalhes do website "Entre Mares"
+        URLToConnectHouseWebsiteDetails: "https://felipeantoniati.com.br/portifolio/connecthouse",  // URL para os detalhes do website "Connect House"
     },
 
     // Textos para os itens de navegação
@@ -45,23 +45,23 @@ export const constantsData: ConstantsDataProps = {
     navItem: [
         {
             title: "Inicio", 
-            URLToPage: "https://felipeantoniati.vercel.app/"
+            URLToPage: "https://felipeantoniati.com.br/"
         },
         {
             title: "Sobre",
-            URLToPage: "https://felipeantoniati.vercel.app/sobre"
+            URLToPage: "https://felipeantoniati.com.br/sobre"
         },
         {
             title: "Portifolio", 
-            URLToPage: "https://felipeantoniati.vercel.app/portifolio"
+            URLToPage: "https://felipeantoniati.com.br/portifolio"
         },
         {
             title: "Serviços", 
-            URLToPage: "https://felipeantoniati.vercel.app/servicos"
+            URLToPage: "https://felipeantoniati.com.br/servicos"
         },
         {
             title: "Contato", 
-            URLToPage: "https://felipeantoniati.vercel.app/contato"
+            URLToPage: "https://felipeantoniati.com.br/contato"
         },
     ],
 };
