@@ -22,6 +22,7 @@ const ProjectSection: React.FC = () => {
                             cardDescriptionText={project.description}
                             cardDetailsData={project.date}
                             cardDetailsDuration={project.duration}
+                            urlWebsite={project.buttonURL}
                         />
                     );
                 })}

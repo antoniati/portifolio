@@ -18,7 +18,7 @@ export default function SucessoPage() {
                 <h1>Email Enviado com Sucesso</h1>
                 <p>Seu Email foi recebido com sucesso, e em até 24h estarei respondendo sua mensagem.</p>
                 {/* <p>Muito obrigado por entrar em contato, espero em breve iniciar um projeto de sucesso juntos</p> */}
-                <MainButton mainButtonText="OK" mainButtonURL="https://felipeantoniati.vercel.app"/>
+                <MainButton mainButtonText="OK" mainButtonURL="https://felipeantoniati.com.br"/>
             </main>
             <Footer />
         </>

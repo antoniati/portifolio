@@ -24,7 +24,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
                 </div>
                 <SecondaryButton
                     secondaryButtonText="Ver Detalhes"
-                    secondaryButtonURL="https://felipeantoniati.vercel.app/servicos"
+                    secondaryButtonURL="https://felipeantoniati.com.br/servicos"
                 />
             </div>
         </NeumorphismContainer>

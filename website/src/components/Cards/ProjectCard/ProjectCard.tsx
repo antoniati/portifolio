@@ -10,6 +10,7 @@ interface ProjectCardProps {
     cardImageAltText: string;
     cardDetailsDuration: string;
     cardDetailsData: string;
+    urlWebsite: string;
 
 }
 
@@ -20,7 +21,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     cardImageAltText,
     cardDetailsData,
     cardDetailsDuration,
-
+    urlWebsite
 }) => {
     return (
         <NeumorphismContainer>
@@ -47,7 +48,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     </div>
                     <SecondaryButton
                         secondaryButtonText="Visite o site"
-                        secondaryButtonURL="#"
+                        secondaryButtonURL={urlWebsite}
                     />
                 </div>
             </div>
