@@ -16,7 +16,7 @@ export default function WhatsAppButton() {
     return (
         <a
             id={styles.whatsapp}
-            href={process.env.URL_CONTACT_WHATSAPP} // URL do WhatsApp para redirecionamento
+            href="https://api.whatsapp.com/send?phone=13981257704" // URL do WhatsApp para redirecionamento
             target="_blank" // Abre o link em uma nova aba
             rel="noopener noreferrer"
         >
