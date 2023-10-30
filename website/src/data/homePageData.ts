@@ -42,22 +42,22 @@ export const projectsSection: ProjectsSection = {
 // Cartões de projeto
 export const projectCards: ProjectCard[] = [
     {
+        imageURL: "/images/layout-website-condoplanner.png",
+        imageAltText: "Imagem da página inicial do SAAS",
+        title: 'SAAS - Condoplanner Gestão de condomínios (Em Desenvolvimento)',
+        description: 'Condoplanner é o meu projeto pessoal dedicado a revolucionar a gestão de condomínios. Minha visão é criar uma solução inteligente e fácil de usar para simplificar a administração condominial. Com recursos avançados em desenvolvimento, como gestão financeira, reservas de áreas comuns e notificações automatizadas, estou comprometido em melhorar a vida dos síndicos e administradores. Junte-se a mim nessa jornada de inovação e eficiência na gestão de condomínios. Fique ligado para atualizações do desenvolvimento!',
+        date: '30/',
+        duration: 'Em Desenvolvimento',
+        buttonURL: "https://github.com/antoniati/condoplanner"
+    },      
+    {
         imageURL: '/images/layout-website-entremares.png',
-        imageAltText: 'Imagem da página inicial do website do condomínio phoenix entre mares',
-        title: 'Website - Condomínio Phoenix Entre Mares',
+        imageAltText: 'Imagem da página inicial do website',
+        title: 'Website - Condomínio Phoenix Entre Mares (Projeto de Apresentação)',
         description: 'O projeto Phoenix Entre Mares é um testemunho do meu compromisso em criar experiências digitais excepcionais. Com dedicação, transformei a visão deste condomínio em um website moderno e responsivo. Este espaço virtual traz não apenas informações essenciais sobre o empreendimento, mas também oferece uma interação fluída através de um formulário de contato eficiente e integração perfeita com o Google Maps',
         date: '20/06/2023',
         duration: '15 Dias',
         buttonURL: "https://phoenixentremares.vercel.app"
-    },
-    {
-        imageURL: "/images/layout-website-connecthouse.png",
-        imageAltText: "Imagem da página inicial do website da empresa connect house",
-        title: 'Website - Connect House Empresa de Automação',
-        description: 'O projeto Connect House representa a convergência de tecnologia e criatividade. Neste projeto, dei vida à presença digital desta empresa, construindo um website moderno e responsivo que reflete sua identidade. Através de uma abordagem centrada no usuário, desenvolvi um espaço online que vai além de informações básicas, incorporando um formulário de contato intuitivo, integração perfeita com o Google Maps e um canal direto via WhatsApp',
-        date: '22/07/2023',
-        duration: '15 Dias',
-        buttonURL: "https://connecthouse.vercel.app"
     },
 ];
 
